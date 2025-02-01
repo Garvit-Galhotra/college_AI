@@ -1129,11 +1129,11 @@ train_examples = [
     InputExample(texts=["Are rescheduled exams recorded differently in the academic transcript? ", "What is the schedule for semester exams at BFGI?"], label=1.0),
 
    # 15, GREETINGS
-   InputExample(texts=["How are you doing today? ", "How are you today?"], label=1.0),
-   InputExample(texts=["How’s it going today?  ", "How are you today?"], label=1.0),
-   InputExample(texts=["How do you feel today? ", "How are you today?"], label=1.0),
-   InputExample(texts=["How’s everything today? ", "How are you today?"], label=1.0),
-   InputExample(texts=["How are things going today? ", "How are you today?"], label=1.0),
+   InputExample(texts=["Hey", "Hi"], label=1.0),
+   InputExample(texts=["Hello", "Hi"], label=1.0),
+   InputExample(texts=["Hii", "Hi"], label=1.0),
+   InputExample(texts=["Hi, How are you?", "Hi"], label=1.0),
+   InputExample(texts=["Hey, Whats up?", "Hi"], label=1.0),
    InputExample(texts=["How is your day going? ", "How are you today?"], label=1.0),
    InputExample(texts=["How are you holding up today? ", "How are you today?"], label=1.0),
    InputExample(texts=["How’s life treating you today? ", "How are you today?"], label=1.0),

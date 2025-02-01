@@ -1,0 +1,71 @@
+{
+    "COLLEGE_OVERVIEW": {
+        "default": [
+            "Baba Farid College of Engineering and Technology (BFCET) is a premier institute offering quality education.",
+            "BFCET is known for its excellent faculty, research facilities, and student success."
+        ]
+    },
+    "COURSE_QUERY": {
+        "btech": [
+            "B.Tech is a four-year undergraduate program at BFCET with specializations in various engineering fields.",
+            "Our B.Tech program includes courses in CSE, Mechanical, Civil, and AI & ML."
+        ],
+        "mtech": [
+            "M.Tech is a two-year postgraduate program focusing on advanced engineering knowledge.",
+            "Our M.Tech program offers specializations in AI, Data Science, and more."
+        ],
+        "default": [
+            "We offer B.Tech, M.Tech, and other specialized courses. Check our website for details."
+        ]
+    },
+    "ADMISSION_QUERY": {
+        "btech": [
+            "For B.Tech admissions, you need to pass 12th grade with PCM subjects and appear for entrance exams.",
+            "B.Tech admissions require fulfilling eligibility criteria and submitting necessary documents."
+        ],
+        "mtech": [
+            "M.Tech admissions are based on GATE scores or equivalent entrance tests.",
+            "For M.Tech, you must have a relevant bachelor's degree in engineering."
+        ],
+        "default": [
+            "Admissions are open for various courses. Visit our website or contact our admission office for more details."
+        ]
+    },
+    "FEE_QUERY": {
+        "btech": [
+            "The fee structure for B.Tech varies by specialization. Please visit our website for details.",
+            "B.Tech fees include tuition, hostel, and miscellaneous charges."
+        ],
+        "mtech": [
+            "M.Tech fees depend on the specialization and include tuition, lab, and hostel charges.",
+            "The M.Tech fee structure is available on our college website."
+        ],
+        "default": [
+            "Fee details for all courses can be found on our official website."
+        ]
+    },
+    "CAMPUS_QUERY": {
+        "library": [
+            "Our library is well-equipped with thousands of books, journals, and digital resources.",
+            "BFCET's library provides a quiet and resourceful environment for students."
+        ],
+        "gym": [
+            "We have a modern gym with professional trainers for student fitness.",
+            "The campus gym is open for students from 6 AM to 9 PM."
+        ],
+        "cafeteria": [
+            "Our cafeteria offers a variety of meals and snacks at affordable prices.",
+            "The BFCET cafeteria serves hygienic and tasty food for students and staff."
+        ],
+        "default": [
+            "Our campus has excellent facilities including a library, gym, cafeteria, and student lounges."
+        ]
+    },
+    "FALLBACK": {
+        "default": [
+            "I'm sorry, I didn't understand that. Can you rephrase?",
+            "Apologies, I couldn't process that. Could you clarify?",
+            "I'm not sure how to help with that. Could you ask in a different way?"
+        ]
+    }
+}

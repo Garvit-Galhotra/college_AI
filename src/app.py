@@ -4,7 +4,7 @@ import os
 # Add the parent directory to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from response_data.response import get_responses
+from response_generator import generate_response
 from flask import Flask, request, jsonify
 from Intent_classification import intent_prediction
 from views import views  # Importing views.py
@@ -27,7 +27,7 @@ def chat():
 
     # Predict the intent and get the bot's response
     intent = intent_prediction(user_message)
-    bot_response = get_responses(intent)
+    bot_response = generate_response(intent)
 
     return jsonify({'response': bot_response})
 

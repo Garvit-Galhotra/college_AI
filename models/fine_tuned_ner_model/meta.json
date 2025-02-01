@@ -148,12 +148,10 @@
       "ORG",
       "PERCENT",
       "PERSON",
-      "PROCESS",
       "PRODUCT",
       "QUANTITY",
       "TIME",
-      "WORK_OF_ART",
-      "YEAR"
+      "WORK_OF_ART"
     ]
   },
   "pipeline":[

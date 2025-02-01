@@ -30,12 +30,11 @@ TRAIN_DATA = [
     ("Are there academic divisions for Environmental Studies?", {"entities": [(33, 54, "DEPARTMENT")]}),
 
     #Admission
-    ("Tell me about the admission process in 2024", {"entities": [(18, 35, "PROCESS"), (39, 43, "YEAR")]}),
-    ("What is the admission process at Baba Farid College of Engineering and Technology?", {"entities": [(12, 29, "PROCESS"),(33, 81, "COLLEGE")]}),
+    ("What is the admission process at Baba Farid College of Engineering and Technology?", {"entities": [(33, 81, "COLLEGE")]}),
 
     #FreeStructure
-    ("What is the fee structure for MBA?", {"entities": [(12, 25, "PROCESS"), (30, 33, "COURSE")]}),
-    ("Can you explain the hostel fee?", {"entities": [(20, 30, "PROCESS")]}),
+    ("What is the fee structure for MBA?", {"entities": [(30, 33, "COURSE")]}),
+    
 
     #Faculty
     ("Who is the Head of Department of Computer Science department?", {"entities": [(11, 29, "FACULTY"), (33,49, "DEPARTMENT")]}),

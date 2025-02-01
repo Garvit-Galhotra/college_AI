@@ -1,4 +1,5 @@
 import spacy
+import re
 
 # Load spaCy's English language model
 nlp = spacy.load("models/fine_tuned_ner_model")
@@ -8,8 +9,9 @@ def entity_extraction(query):
     doc = nlp(query)
 
     # Extract entities
-    for ent in doc.ents:
-        print(f"Entity: {ent.text}, Label: {ent.label_}")
+    entities = [re.sub(r"[^\w\s]", "", ent.text).lower() for ent in doc.ents]
+    return entities
+
 
 
 if __name__ == "__main__": 

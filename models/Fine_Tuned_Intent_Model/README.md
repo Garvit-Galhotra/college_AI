@@ -4,36 +4,37 @@ tags:
 - sentence-similarity
 - feature-extraction
 - generated_from_trainer
-- dataset_size:355
+- dataset_size:1291
 - loss:CosineSimilarityLoss
 base_model: sentence-transformers/all-MiniLM-L6-v2
 widget:
-- source_sentence: Can you provide a brief overview of the college?
+- source_sentence: Are there certifications in programming languages like Python or
+    Java at BFGI?
   sentences:
-  - Tell me about the College.
-  - Tell me about the College.
-  - What kind of extracurricular activities are available?
-- source_sentence: ' Does the college organize yoga or wellness workshops? '
+  - Do you offer evening or weekend classes?
+  - What is the schedule for semester exams at BFGI?
+  - Do you offer evening or weekend classes?
+- source_sentence: How does the placement cell at the college assist students with
+    career opportunities?
   sentences:
-  - Tell me about the College.
-  - What kind of extracurricular activities are available?
-  - What kind of extracurricular activities are available?
-- source_sentence: ' Are there book fairs or literary events on campus?  '
+  - What is the schedule for semester exams at BFGI?
+  - Who are some notable alumni?
+  - What is the average placement percentage?
+- source_sentence: Could you tell me about the main focus of your lab’s research?
   sentences:
-  - How much does a program cost?
-  - What kind of extracurricular activities are available?
-  - How much does a program cost?
-- source_sentence: ' What is the average package offered to alumni of Baba Farid Group
-    of Institutions?'
+  - Who are some notable alumni?
+  - Are there any research labs available?
+  - Do you offer online certification programs?
+- source_sentence: Does BFGI offer certifications in digital marketing?
   sentences:
-  - What kind of extracurricular activities are available?
-  - How does the alumni network support the institution?
-  - How much does a program cost?
-- source_sentence: ' Does the campus host drama or theater performances? '
-  sentences:
-  - What kind of extracurricular activities are available?
+  - What are the key deadlines for applying?
   - Is there a business school or management department?
-  - What kind of extracurricular activities are available?
+  - Do you offer evening or weekend classes?
+- source_sentence: How can I get involved in presenting my research at conferences?
+  sentences:
+  - Who are some notable alumni?
+  - Are there any research labs available?
+  - What is the average placement percentage?
 pipeline_tag: sentence-similarity
 library_name: sentence-transformers
 ---
@@ -88,9 +89,9 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("sentence_transformers_model_id")
 # Run inference
 sentences = [
-    ' Does the campus host drama or theater performances? ',
-    'What kind of extracurricular activities are available?',
-    'Is there a business school or management department?',
+    'How can I get involved in presenting my research at conferences?',
+    'Are there any research labs available?',
+    'Who are some notable alumni?',
 ]
 embeddings = model.encode(sentences)
 print(embeddings.shape)
@@ -145,19 +146,19 @@ You can finetune this model on your own dataset.
 #### Unnamed Dataset
 
 
-* Size: 355 training samples
+* Size: 1,291 training samples
 * Columns: <code>sentence_0</code>, <code>sentence_1</code>, and <code>label</code>
-* Approximate statistics based on the first 355 samples:
-  |         | sentence_0                                                                        | sentence_1                                                                        | label                                                         |
-  |:--------|:----------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:--------------------------------------------------------------|
-  | type    | string                                                                            | string                                                                            | float                                                         |
-  | details | <ul><li>min: 7 tokens</li><li>mean: 11.41 tokens</li><li>max: 30 tokens</li></ul> | <ul><li>min: 7 tokens</li><li>mean: 10.32 tokens</li><li>max: 13 tokens</li></ul> | <ul><li>min: 1.0</li><li>mean: 1.0</li><li>max: 1.0</li></ul> |
+* Approximate statistics based on the first 1000 samples:
+  |         | sentence_0                                                                        | sentence_1                                                                       | label                                                         |
+  |:--------|:----------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|:--------------------------------------------------------------|
+  | type    | string                                                                            | string                                                                           | float                                                         |
+  | details | <ul><li>min: 3 tokens</li><li>mean: 13.72 tokens</li><li>max: 26 tokens</li></ul> | <ul><li>min: 3 tokens</li><li>mean: 9.54 tokens</li><li>max: 13 tokens</li></ul> | <ul><li>min: 1.0</li><li>mean: 1.0</li><li>max: 1.0</li></ul> |
 * Samples:
-  | sentence_0                                                             | sentence_1                                                          | label            |
-  |:-----------------------------------------------------------------------|:--------------------------------------------------------------------|:-----------------|
-  | <code>What is the due date for fee payment each semester?</code>       | <code>How much does a program cost?</code>                          | <code>1.0</code> |
-  | <code>What are the departmental goals for student retention?</code>    | <code>Is there a business school or management department?</code>   | <code>1.0</code> |
-  | <code> Does the college host technology-focused fests or expos?</code> | <code>What kind of extracurricular activities are available?</code> | <code>1.0</code> |
+  | sentence_0                                                | sentence_1                                             | label            |
+  |:----------------------------------------------------------|:-------------------------------------------------------|:-----------------|
+  | <code>Are online classes available for my degree? </code> | <code>What courses should I take next semester?</code> | <code>1.0</code> |
+  | <code> Can I pursue event management at BFGI?</code>      | <code>Do you offer evening or weekend classes?</code>  | <code>1.0</code> |
+  | <code>How’s the schedule looking for you? </code>         | <code>How are you today?</code>                        | <code>1.0</code> |
 * Loss: [<code>CosineSimilarityLoss</code>](https://sbert.net/docs/package_reference/sentence_transformer/losses.html#cosinesimilarityloss) with these parameters:
   ```json
   {
