@@ -18,13 +18,17 @@ def intent_prediction(query):
             "What are the facilities available here?",
             "Who is Head of Department Of SSD?",
             "How many Departments do you have?",
-            "What are the fees?",
+            "What is the fee Structure?",
             "What are the placement opportunities?",
-            "Does the college have a strong alumni network?",
-            "What kind of extracurricular activities are available?",
-            "Does the college support research?",
-            "Does the college have international partnerships?",
-            "Are online courses available?"
+            "Who are some notable alumni?",
+            "Do you organize annual events?",
+            "Are there any research labs available?",
+            "Can I participate in student exchange programs?",
+            "Do you offer online certification programs?",
+            "What is the schedule for semester exams at BFGI?",
+            "Hi",
+            "What courses should I take next semester?",
+            "what is this?"
             ]
 
     # Encode FAQs
@@ -69,13 +73,16 @@ def intent_prediction(query):
         "What are the facilities available here?": "CAMPUS_QUERY",
         "Who is Head of Department Of SSD?": "FACULTY_QUERY",
         "How many Departments do you have?": "DEPARTMENT_QUERY",
-        "What are the fees?": "FEE_QUERY",
-        "What are the placement opportunities?":"PLACEMENT_AND_CAREER_QUERY",
-        "Does the college have a strong alumni network?": "ALUMNI_NETWORK_QUERY",
-        "What kind of extracurricular activities are available?":"EVENT_AND_ACTIVITES_QUERY",
-        "Does the college support research?": "RESEARCH_OPPORTUNITIES_QUERY",
-        "Does the college have international partnerships?":"INTERNATIONAL_COLLABORATION_QUERY",
-        "Are online courses available?":"ONLINE_LEARNING_AND_RESOURCES_QUERY",
+        "What is the fee Structure?": "FEE_QUERY",
+        "What are the placement opportunities?":"PLACEMENT_QUERY",
+        "Who are some notable alumni?": "ALUMNI_NETWORK_QUERY",
+        "Do you organize annual events?":"EVENTS_QUERY",
+        "Are there any research labs available?": "RESEARCH_OPPORTUNITIES_QUERY",
+        "Can I participate in student exchange programs?":"INTERNATIONAL_COLLABORATION_QUERY",
+        "Do you offer online certification programs?":"ONLINE_LEARNING_AND_RESOURCES_QUERY",
+        "What is the schedule for semester exams at BFGI?":"EXAM_SCHEDULE_QUERY",
+        "Hi":"GREETING",
+        "What courses should I take next semester?":"ACADEMIC_QUERY",
         "what is this?":"FALLBACK"
     }
 

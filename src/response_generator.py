@@ -8,21 +8,6 @@ import json
 
 from src.Intent_classification import intent_prediction  # importing intent prediction from intent classification
 from src.Entity_extraction import entity_extraction # importing entity extraction function from entityExtraction
-# from response_data.response import get_responses  # Import the get_response function from response_data
-
-'''
-def generate_response(query):
-    # Get intent from the classification model
-    intent = intent_prediction(query)  # Assuming this function returns the intent
-    response = random.choice(get_responses(intent))  # Get response based on the intent
-    return response
-
-# creating the loops to create a conversation
-while (user_query := input("You: ").lower()) not in ["quit", "back", "thats it", "bye"]:
-    response = generate_response(user_query)
-    print(response)
-'''
-
 
 # Load responses from JSON file
 def load_responses(file_path):
@@ -55,6 +40,11 @@ def generate_response(user_query):
     
         if not responses:
             return random.choice(intent_responses["default"])
+    else:
+        intent = "DEFAULT"
+        intent_responses = response_data[intent]
+        responses.append(random.choice(intent_responses["default"]))
+
     response = "\n".join(responses)
     return response
 

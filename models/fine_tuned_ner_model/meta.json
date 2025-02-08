@@ -126,22 +126,20 @@
 
     ],
     "ner":[
-      "BUSINESS HOURS",
       "CAMPUS_FACILITY",
       "CARDINAL",
-      "COLLEGE",
       "COURSE",
       "DATE",
       "DEPARTMENT",
       "EVENT",
       "FAC",
-      "FACILITY",
       "FACULTY",
       "GPE",
       "INSTITUTE",
       "LANGUAGE",
       "LAW",
       "LOC",
+      "MISSION",
       "MONEY",
       "NORP",
       "ORDINAL",
@@ -151,6 +149,8 @@
       "PRODUCT",
       "QUANTITY",
       "TIME",
+      "VALUES",
+      "VISION",
       "WORK_OF_ART"
     ]
   },

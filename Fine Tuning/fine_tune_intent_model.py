@@ -13,7 +13,7 @@ from training_data.intent_train_data import get_training_data
 
 intent_data = get_training_data()
 # Load a pretrained model
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('multi-qa-MiniLM-L6-dot-v1')
 
 # Create a DataLoader
 # select the batch 16-32 for laptops or small GPU to train the model

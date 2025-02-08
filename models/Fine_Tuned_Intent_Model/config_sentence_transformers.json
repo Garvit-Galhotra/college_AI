@@ -6,5 +6,5 @@
   },
   "prompts": {},
   "default_prompt_name": null,
-  "similarity_fn_name": "cosine"
+  "similarity_fn_name": "dot"
 }

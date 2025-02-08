@@ -1,47 +1,371 @@
 {
-    "COLLEGE_OVERVIEW": {
+    "GREETING":{
         "default": [
-            "Baba Farid College of Engineering and Technology (BFCET) is a premier institute offering quality education.",
-            "BFCET is known for its excellent faculty, research facilities, and student success."
+            "Hey! Hope you're having a great day. How can I assist you with Baba Farid College?",
+            "Hi and welcome to Baba Farid College! We're happy to help. What would you like to know?",
+            "Hello! At Baba Farid College, we believe in shaping bright futures. How can I assist you today?",
+            "Warm greetings from Baba Farid College! Let me know if you need any information.",
+            "Welcome! Whether you're a student, parent, or visitor, I'm here to help with any college-related queries."
+        ]
+    },
+    "COLLEGE_OVERVIEW": {
+        "vision": [
+            "To provide world-class technical education that empowers students with the latest knowledge, skills, and problem-solving abilities.",
+            "To foster a culture of innovation, critical thinking, and research, encouraging students to explore new ideas and technologies.",
+            " To bridge the gap between academia and industry by offering practical, hands-on learning experiences that make students job-ready professionals.",
+            "To focus on the overall personality development of students, shaping them into responsible, ethical, and compassionate leaders.",
+            "To instill a sense of social responsibility, motivating students to use their technical expertise for the betterment of humanity and sustainable development."
+        ],
+        "mission": [
+            "Ensuring students gain both theoretical and hands-on experience to develop essential technical expertise.",
+            "Equipping students with industry-relevant skills, including communication, teamwork, and problem-solving, to make them future-ready technocrats.",
+            "Aligning education with real-world industry demands, providing students with exposure to current technologies, trends, and professional practices.",
+            "Encouraging students to engage in rural development, women empowerment, health awareness, and environmental protection to contribute positively to society.",
+            "Promoting ethical values, sustainability, and social well-being, ensuring students become responsible citizens and innovators for a better tomorrow."
+        ],
+        "values": [
+            "The college prioritizes eco-friendly practices and integrates sustainability into its educational and operational activities to create a better future.",
+            "Encouraging a culture of creativity, research, and problem-solving to help students become leaders in technology and business.",
+            "Focusing on company and industry research (Goovers) to ensure students gain real-world insights and hands-on experience.",
+            "Striving for high standards in education, research, and student development, ensuring graduates stand out in their careers.",
+            "Promoting an inclusive and supportive environment, where mutual respect and motivation help individuals achieve their full potential."
+        ],
+        "unique": [
+            "The Institute enhances students' practical knowledge and career readiness through MOUs with corporate and industrial partners, enabling industry collaboration, knowledge exchange, and exposure to real-world applications.",
+            "Faculty members are encouraged to present research papers and projects internationally with travel grants, fostering global academic engagement and ensuring continuous professional growth.",
+            "Beyond academics, the Institute trains students in verbal skills, logical aptitude, and personality development, ensuring they are well-equipped to handle global challenges and career opportunities.",
+            "The use of e-governance, CCTV surveillance, and campus-wide Wi-Fi enhances security, operational efficiency, and seamless connectivity for students and staff.",
+            "A student-centric, ICT-enabled approach, combined with outcome-based education and off-syllabus projects, ensures students gain industry-relevant skills beyond traditional coursework."
+        ],
+        "locatied": [
+            "Bathinda has a rich history, once known as Bhatti Vinda and Bitunda, with the Old Fort standing as a testament to its past. It was conquered by Maharaja Ala Singh in 1754 AD and later became a full-fledged district after India's independence.",
+            "Bathinda is one of Punjab’s largest cities, rapidly developing in economic, social, educational, and political fields. The city has witnessed major real estate growth, with Mittal Mall, City Centre, and Peninsula Mall among its prominent commercial hubs.",
+            "The city has become a center for higher education, hosting institutions like Maharaja Ranjit Singh Punjab Technical University, AIIMS Bathinda, Govt. Polytechnic, and Punjabi University regional centers, offering degree and diploma courses in engineering, medical, and humanities fields.",
+            "Bathinda has a strong industrial base, featuring thermal power plants, National Fertilizers Limited, Ambuja Cement, Bathinda Chemicals, and Vardhman Polytex. The Guru Gobind Singh Refinery Limited, a major investment project involving industrialist Lakshmi Niwas Mittal, has further boosted its economic significance.",
+            "The city is home to Asia’s largest Army cantonment and an Air Force station at Bhisiana. Tourist attractions like big lakes, malls, an airport, Chetak Park, and a Mini Zoo have put Bathinda on the tourist map of India."
+        ],
+        "default": [
+            "Baba Farid College of Engineering & Technology (BFCET) is a leading educational institution in Punjab, managed by Baba Farid Vidyak Society <a href='https://www.bfcet.com/' target='_blank'>Visit us</a>Now!!",
+            "Under the visionary leadership of Dr. Gurmeet Singh Dhaliwal (Chairman & Bharat Jyoti Awardee), BFCET offers a state-of-the-art learning environment with modern labs, excellent infrastructure, and experienced faculty<a href='https://www.bfcet.com/' target='_blank'>Visit us</a>Now!!",
+            "The college is committed to equipping students with practical skills to thrive in the rapidly evolving world of technology <a href='https://www.bfcet.com/' target='_blank'>Visit us</a>Now!!",
+            "BFCET offers undergraduate (B.Tech) programs in multiple engineering disciplines and a postgraduate (M.Tech) program in Computer Science & Engineering <a href='https://www.bfcet.com/' target='_blank'>Visit us</a>Now!!"
         ]
     },
     "COURSE_QUERY": {
         "btech": [
-            "B.Tech is a four-year undergraduate program at BFCET with specializations in various engineering fields.",
-            "Our B.Tech program includes courses in CSE, Mechanical, Civil, and AI & ML."
+            "B.Tech is a four-year undergraduate program offering specializations in engineering fields like AI, CSE, Mechanical, and more.",
+            "The B.Tech program focuses on practical learning, industry exposure, and skill development.",
+            "Students gain hands-on experience through projects, lab work, and internships.",
+            "The curriculum is regularly updated to align with the latest technological trends.",
+            "Career opportunities for B.Tech graduates include roles in software development, AI, robotics, and mechanical engineering."
+        ],
+        "btechaiml": [
+            "B.Tech in AI & ML is a four-year program focusing on artificial intelligence, deep learning, and data science.",
+            "Students learn programming languages like Python and R, along with AI frameworks like TensorFlow and PyTorch.",
+            "The curriculum includes hands-on projects, AI model development, and real-world problem-solving.",
+            "Graduates can pursue careers as AI engineers, data scientists, and machine learning experts.",
+            "The program includes collaborations with industries to provide internships and live projects."
+        ],
+        "btechcse": [
+            "B.Tech in Computer Science Engineering (CSE) provides a strong foundation in software development, algorithms, and cybersecurity.",
+            "The program covers programming languages, web development, cloud computing, and artificial intelligence.",
+            "Students participate in hackathons, coding competitions, and industry-sponsored projects.",
+            "Career paths include software engineering, app development, and cybersecurity roles.",
+            "Internships and placement support help students secure jobs in top IT companies."
+        ],
+        "btechiot": [
+            "B.Tech in IoT (Internet of Things) focuses on smart technology, embedded systems, and cloud computing.",
+            "Students learn about sensors, automation, and network security in IoT-based applications.",
+            "The course includes practical lab work, research projects, and collaborations with tech companies.",
+            "Graduates can work in IoT development, automation engineering, and smart city projects.",
+            "The curriculum is designed to keep up with the evolving IoT industry standards."
+        ],
+        "civilengineering": [
+            "B.Tech in Civil Engineering covers structural design, construction technology, and environmental engineering.",
+            "Students gain expertise in designing and constructing sustainable infrastructure projects.",
+            "The course includes field visits, lab testing, and real-world project execution.",
+            "Graduates can work in construction firms, government projects, and urban planning.",
+            "The curriculum is aligned with the latest advancements in civil engineering technologies."
+        ],
+        "electricalengineering": [
+            "B.Tech in Electrical Engineering focuses on power systems, electronics, and renewable energy solutions.",
+            "Students learn circuit design, automation, and electrical machinery operations.",
+            "The program includes hands-on lab experiments, industrial visits, and research projects.",
+            "Graduates can work in power plants, automation industries, and smart grid technology.",
+            "Internships and industry training ensure practical exposure for students."
+        ],
+        "mechanicalengineering": [
+            "B.Tech in Mechanical Engineering covers machine design, thermodynamics, and robotics.",
+            "Students gain expertise in CAD, 3D modeling, and industrial manufacturing.",
+            "The course includes practical workshops, industry collaborations, and research projects.",
+            "Graduates can work in automotive, aerospace, and industrial machinery sectors.",
+            "Internships and training sessions help students develop industry-relevant skills."
         ],
         "mtech": [
-            "M.Tech is a two-year postgraduate program focusing on advanced engineering knowledge.",
-            "Our M.Tech program offers specializations in AI, Data Science, and more."
+            "M.Tech is a two-year postgraduate program for advanced technical knowledge and research.",
+            "Specializations include AI, Data Science, Robotics, and Cybersecurity.",
+            "The curriculum focuses on innovation, research, and industry collaboration.",
+            "Students get opportunities to work on funded projects and present papers at conferences.",
+            "Career options include research scientist, software architect, and university lecturer."
+        ],
+        "mba": [
+            "MBA is a two-year postgraduate program designed for business and management education.",
+            "Specializations include Marketing, Finance, Human Resources, and Operations Management.",
+            "The program includes leadership training, case studies, and industry collaborations.",
+            "Students get exposure to corporate strategies and entrepreneurship opportunities.",
+            "Career options include managerial roles, business consulting, and finance leadership."
+        ],
+        "bsc": [
+            "B.Sc is a three-year undergraduate program with specializations in science and technology fields.",
+            "Students can choose from subjects like Computer Science, Biotechnology, and Physics.",
+            "The program includes lab experiments, research projects, and industry training.",
+            "Career options include research assistant, laboratory technician, and data analyst.",
+            "The curriculum is aligned with advancements in scientific research and industry demands."
+        ],
+        "bca": [
+            "BCA (Bachelor of Computer Applications) is a three-year undergraduate program focusing on IT and software development.",
+            "Students learn programming languages, database management, and web development.",
+            "The curriculum includes hands-on coding, software projects, and internships.",
+            "Graduates can work as software developers, IT consultants, and cybersecurity analysts.",
+            "Industry collaborations and training sessions ensure skill development in emerging technologies."
+        ],
+        "bcaaiml": [
+            "BCA in AI & ML is a specialized three-year program focusing on artificial intelligence and machine learning.",
+            "Students learn AI model development, deep learning, and data analytics.",
+            "The curriculum includes practical applications of AI in real-world scenarios.",
+            "Career options include AI engineer, data scientist, and automation specialist.",
+            "Students work on industry projects and research-based learning initiatives."
+        ],
+        "bba": [
+            "BBA (Bachelor of Business Administration) is a three-year program focusing on business management and entrepreneurship.",
+            "Students learn financial management, marketing strategies, and business operations.",
+            "The course includes industry exposure, internships, and case study analysis.",
+            "Career paths include business development, sales management, and HR executive roles.",
+            "The program is designed to develop leadership and decision-making skills."
+        ],
+        "diploma": [
+            "Diploma programs provide practical knowledge in technical and professional fields.",
+            "Available diploma courses include Civil Engineering, Mechanical Engineering, and Computer Applications.",
+            "The courses focus on skill-based training and real-world application of concepts.",
+            "Students get hands-on experience through workshops and industry projects.",
+            "Career options include technician, junior engineer, and technical consultant."
         ],
         "default": [
-            "We offer B.Tech, M.Tech, and other specialized courses. Check our website for details."
+            "We offer B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs. Check our <a href='https://www.bfcet.com/programme-offered/' target='_blank'>website</a> for details."
         ]
     },
     "ADMISSION_QUERY": {
         "btech": [
-            "For B.Tech admissions, you need to pass 12th grade with PCM subjects and appear for entrance exams.",
-            "B.Tech admissions require fulfilling eligibility criteria and submitting necessary documents."
+            "For B.Tech admissions, candidates must have passed 12th grade with Physics, Chemistry, and Mathematics (PCM).",
+            "Admissions are based on merit and entrance exams like JEE Main or state-level engineering tests.",
+            "Candidates must fill out the online application form and submit the required documents.",
+            "Direct admission may be available for students with exceptional academic records.",
+            "For detailed admission criteria, visit our <a href='https://www.bfcet.com/admissions/' target='_blank'>website</a>."
+        ],
+        "btechaiml": [
+            "Eligibility for B.Tech AI & ML requires passing 12th grade with PCM subjects.",
+            "Admission is granted based on JEE Main scores or merit-based selection.",
+            "The application process includes document verification and counseling.",
+            "Candidates should have a strong interest in programming and artificial intelligence.",
+            "Scholarships may be available for high-ranking students."
+        ],
+        "btechcse": [
+            "B.Tech CSE admissions require a 12th-grade qualification with PCM subjects.",
+            "Selection is through JEE Main or state-level entrance exams.",
+            "Candidates must apply online and submit necessary academic documents.",
+            "Students with strong programming skills are given preference in certain programs.",
+            "Early admission options are available for high-achieving students."
+        ],
+        "btechiot": [
+            "B.Tech IoT admissions require 12th-grade completion with PCM subjects.",
+            "Selection is based on entrance exams or direct merit-based admission.",
+            "Students should have an interest in automation, networking, and smart technology.",
+            "The application includes document submission and counseling sessions.",
+            "Industry collaborations provide hands-on learning opportunities."
+        ],
+        "civilengineering": [
+            "Admission to B.Tech Civil Engineering requires passing 12th grade with PCM.",
+            "Selection is based on JEE Main scores or direct merit-based admission.",
+            "The course includes practical training and internships in the construction industry.",
+            "Candidates should have an aptitude for designing and infrastructure development.",
+            "Scholarships are available for meritorious students."
+        ],
+        "electricalengineering": [
+            "B.Tech Electrical Engineering admissions require a 12th-grade qualification with PCM.",
+            "Selection is based on national/state-level entrance exams or merit-based admissions.",
+            "The program includes hands-on lab training and industry exposure.",
+            "Candidates should have an interest in electronics, circuits, and power systems.",
+            "Financial aid and scholarship options are available."
+        ],
+        "mechanicalengineering": [
+            "B.Tech Mechanical Engineering requires a 12th-grade qualification with PCM.",
+            "Admissions are based on JEE Main or direct merit selection.",
+            "The curriculum includes CAD modeling, robotics, and industrial projects.",
+            "Students are encouraged to participate in internships with top industries.",
+            "Scholarships and fee waivers may be available for eligible candidates."
         ],
         "mtech": [
-            "M.Tech admissions are based on GATE scores or equivalent entrance tests.",
-            "For M.Tech, you must have a relevant bachelor's degree in engineering."
+            "M.Tech admissions require a bachelor's degree in engineering or a related field.",
+            "Selection is primarily based on GATE scores or equivalent entrance exams.",
+            "Candidates must apply online and attend counseling sessions for final selection.",
+            "Research-oriented students are encouraged to apply for funded projects.",
+            "Scholarships and financial aid are available for GATE-qualified students."
+        ],
+        "mba": [
+            "MBA admissions require a bachelor's degree in any discipline from a recognized university.",
+            "Candidates must appear for entrance exams like CAT, MAT, or equivalent tests.",
+            "Selection includes group discussions and personal interviews.",
+            "Work experience is preferred but not mandatory for admission.",
+            "Scholarships and fee waivers are available for top-ranking students."
+        ],
+        "bsc": [
+            "B.Sc admissions require 12th-grade completion with relevant science subjects.",
+            "Selection is merit-based, depending on academic performance.",
+            "The program includes hands-on lab training and research opportunities.",
+            "Candidates interested in research and innovation are encouraged to apply.",
+            "Financial aid options are available for eligible students."
+        ],
+        "bca": [
+            "BCA admissions require 12th-grade completion with Mathematics as a preferred subject.",
+            "Selection is based on merit or entrance test scores.",
+            "Candidates with strong problem-solving skills and programming knowledge are preferred.",
+            "Internship opportunities and industry collaborations enhance learning.",
+            "Scholarships are available for outstanding students."
+        ],
+        "bcaaiml": [
+            "BCA AI & ML admissions require 12th-grade completion with Mathematics or Computer Science.",
+            "Selection is merit-based or through entrance exams conducted by the college.",
+            "Students learn programming, data science, and AI model development.",
+            "Hands-on projects and industry mentorship are key components of the program.",
+            "Scholarships and financial assistance are available."
+        ],
+        "bba": [
+            "BBA admissions require 12th-grade completion in any stream from a recognized board.",
+            "Selection is based on merit or an entrance test followed by a personal interview.",
+            "Candidates interested in business management and entrepreneurship are encouraged to apply.",
+            "The course includes industry visits, case studies, and leadership training.",
+            "Scholarship programs are available for high-achieving students."
+        ],
+        "diploma": [
+            "Diploma program admissions require passing 10th or 12th grade, depending on the specialization.",
+            "Selection is merit-based, with direct admission for eligible candidates.",
+            "Students gain hands-on technical training and real-world industry exposure.",
+            "Internships and live projects enhance learning and employability.",
+            "Scholarship options are available for deserving students."
         ],
         "default": [
-            "Admissions are open for various courses. Visit our website or contact our admission office for more details."
+            "Admissions are open for various courses, including B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs.",
+            "Candidates must meet the eligibility criteria and submit required documents for admission.",
+            "Scholarships and financial aid are available for meritorious students.",
+            "For detailed admission information, visit our <a href='https://www.bfcet.com/admissions/' target='_blank'>website</a>.",
+            "Contact our admission office for any queries related to courses, fees, and application procedures."
         ]
     },
     "FEE_QUERY": {
         "btech": [
-            "The fee structure for B.Tech varies by specialization. Please visit our website for details.",
-            "B.Tech fees include tuition, hostel, and miscellaneous charges."
+            "The fee structure for B.Tech varies based on specialization and category.",
+            "It includes tuition fees, examination fees, and other miscellaneous charges.",
+            "Hostel and mess charges are separate for students opting for on-campus accommodation.",
+            "Scholarships and financial aid are available for meritorious students.",
+            "For detailed B.Tech fee structure, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+        ],
+        "btechaiml": [
+            "The fee for B.Tech AI & ML covers tuition, lab charges, and infrastructure fees.",
+            "Students can avail of installment-based payment options.",
+            "Additional charges apply for industry training and AI lab access.",
+            "Scholarships for top-performing students and need-based financial aid are available.",
+            "Detailed fee structure is available on our official <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+        ],
+        "btechcse": [
+            "B.Tech CSE fees include tuition, software lab access, and infrastructure charges.",
+            "Students may have to pay extra for industry certifications and specialized courses.",
+            "Scholarships are provided for high-scoring students in entrance exams.",
+            "Loan facilities are available through partnered banks.",
+            "For a breakdown of fees, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+        ],
+        "btechiot": [
+            "B.Tech IoT fee structure includes tuition, lab charges, and IoT device access.",
+            "Students must pay an additional fee for hands-on IoT training modules.",
+            "Scholarships are offered based on academic excellence and financial need.",
+            "Flexible payment options are available for students.",
+            "Visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a> for details."
+        ],
+        "civilengineering": [
+            "B.Tech Civil Engineering fees include tuition, field training, and laboratory expenses.",
+            "Students may have additional costs for project materials and site visits.",
+            "Scholarship schemes are available for academically outstanding students.",
+            "Loan assistance is provided through approved financial institutions.",
+            "Check our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a> for detailed fee information."
+        ],
+        "electricalengineering": [
+            "B.Tech Electrical Engineering fees cover tuition, lab usage, and practical training.",
+            "Additional charges may apply for software and hardware-based workshops.",
+            "Students can apply for merit-based scholarships and need-based financial aid.",
+            "Loan facilities are available in partnership with leading banks.",
+            "For a detailed fee breakdown, refer to our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+        ],
+        "mechanicalengineering": [
+            "B.Tech Mechanical Engineering fees include tuition, lab access, and workshop training.",
+            "Additional charges apply for industrial visits and hands-on machine learning.",
+            "Scholarships and financial aid options are available for deserving students.",
+            "Students can opt for flexible payment schemes and loan assistance.",
+            "For complete fee details, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
         ],
         "mtech": [
-            "M.Tech fees depend on the specialization and include tuition, lab, and hostel charges.",
-            "The M.Tech fee structure is available on our college website."
+            "M.Tech fees depend on the specialization and include tuition, lab, and research fees.",
+            "GATE-qualified students may be eligible for tuition fee waivers or stipends.",
+            "Students are required to pay additional charges for research projects and publications.",
+            "Loan and financial aid options are available for eligible candidates.",
+            "For a detailed M.Tech fee structure, check our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+        ],
+        "mba": [
+            "MBA fee structure covers tuition, case study materials, and business workshops.",
+            "Additional charges may apply for industry visits and leadership training programs.",
+            "Students can avail themselves of scholarships based on academic performance.",
+            "Loan facilities are available for students requiring financial assistance.",
+            "For MBA fee details, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+        ],
+        "bsc": [
+            "B.Sc program fees vary based on specialization and include lab and practical session fees.",
+            "Students can opt for installment-based payments for fee submission.",
+            "Scholarships are provided for students excelling in academics.",
+            "Loan assistance is available through banking partners.",
+            "Check our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a> for a detailed fee structure."
+        ],
+        "bca": [
+            "BCA fees cover tuition, computer lab access, and software subscriptions.",
+            "Students can pay additional fees for specialized IT certifications.",
+            "Scholarships are available based on merit and financial need.",
+            "Loan facilities are available through partnered financial institutions.",
+            "For more details, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+        ],
+        "bcaaiml": [
+            "BCA AI & ML fees include tuition, AI lab access, and cloud computing subscriptions.",
+            "Students may have to pay additional fees for industry training and research projects.",
+            "Scholarships are available for top-performing students.",
+            "Flexible fee payment options and loan facilities are offered.",
+            "Visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a> for details."
+        ],
+        "bba": [
+            "BBA fees cover tuition, business case study materials, and entrepreneurship training.",
+            "Students may have to pay additional charges for business simulation software.",
+            "Scholarships and financial aid are available for meritorious students.",
+            "Loan facilities are provided in collaboration with banks.",
+            "For a detailed fee structure, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+        ],
+        "diploma": [
+            "Diploma fees vary based on specialization and include tuition and practical training costs.",
+            "Additional charges apply for industrial visits and hands-on skill development programs.",
+            "Scholarships are available for students with exceptional academic records.",
+            "Loan facilities and flexible payment options are provided for students.",
+            "For diploma course fee details, refer to our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
         ],
         "default": [
-            "Fee details for all courses can be found on our official website."
+            "Our institution offers various courses, including B.Tech, M.Tech, MBA, BBA, BCA, and diploma programs.",
+            "The fee structure varies based on the course and specialization.",
+            "Students can apply for scholarships and financial aid based on merit and need.",
+            "Loan assistance is available in collaboration with banking institutions.",
+            "For complete fee details, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
         ]
     },
     "CAMPUS_QUERY": {
@@ -57,15 +381,94 @@
             "Our cafeteria offers a variety of meals and snacks at affordable prices.",
             "The BFCET cafeteria serves hygienic and tasty food for students and staff."
         ],
+        "hostel": [
+            "The campus provides separate hostel facilities for boys and girls with modern amenities.",
+            "Hostel rooms are spacious, well-furnished, and include Wi-Fi access, laundry, and mess facilities.",
+            "24/7 security and dedicated wardens ensure a safe and comfortable stay for students."
+        ],
+        "sports": [
+            "BFCET offers excellent sports facilities including basketball, football, badminton, and indoor games.",
+            "Regular inter-college and intra-college tournaments help students develop teamwork and sportsmanship.",
+            "Professional coaches are available to guide students in various sports activities."
+        ],
+        "transport": [
+            "The institute provides a well-organized transport facility with a fleet of buses covering nearby cities and towns.",
+            "All buses are equipped with safety measures, ensuring secure and comfortable travel for students."
+        ],
+        "medical": [
+            "BFCET has an on-campus medical facility with qualified doctors and first-aid support.",
+            "Emergency medical services are available 24/7 for students and staff."
+        ],
         "default": [
-            "Our campus has excellent facilities including a library, gym, cafeteria, and student lounges."
+            "Our campus has excellent facilities including a library, gym, cafeteria, hostels, transport services, and medical care.",
+            "BFCET provides a secure and comfortable environment for students to thrive academically and socially.",
+            "With modern infrastructure and a student-friendly atmosphere, the campus is designed for holistic development.",
+            "The college ensures students have access to world-class amenities, fostering a seamless learning experience.",
+            "Explore our campus and experience a vibrant academic and extracurricular life!"
+        ]
+    },
+    "PLACEMENT_QUERY": {
+        "internships": [
+            "The college has tie-ups with top industries to provide students with hands-on internship experiences.",
+            "Internships are available in various fields such as AI, software development, mechanical engineering, and business management."
+        ],
+        "recruiters": [
+            "Top recruiters include TCS, Infosys, Wipro, HCL, and Accenture, among many others.",
+            "The placement cell ensures students get opportunities in leading national and international companies."
+        ],
+        "training": [
+            "The college offers dedicated pre-placement training programs including aptitude tests, mock interviews, and coding practice.",
+            "Students undergo resume-building sessions and industry interaction programs to enhance employability skills."
+        ],
+        "default": [
+            "Our placement cell provides career guidance, internships, and job opportunities with top recruiters. Visit our website for more details.",
+            "BFCET is committed to ensuring high placement rates by partnering with top companies and industry leaders.",
+            "Through skill development programs and corporate collaborations, we bridge the gap between academics and industry.",
+            "Students undergo rigorous training, workshops, and mock interviews to prepare for competitive job markets.",
+            "For placement statistics and recruitment details, check out our official website."
+        ]
+    },
+    "EVENTS_QUERY": {
+        "techfest": [
+            "BFCET organizes an annual tech fest featuring hackathons, coding competitions, and robotics events.",
+            "Students get to showcase their technical skills and innovative ideas in a competitive environment."
+        ],
+        "cultural": [
+            "Cultural events at BFCET include dance, music, drama, and talent showcases.",
+            "Annual cultural fests bring students together to celebrate diversity and creativity."
+        ],
+        "sportsmeet": [
+            "The college hosts an annual sports meet where students participate in athletics, team games, and adventure sports.",
+            "Winners of various events receive awards and recognition from the institute."
+        ],
+        "seminars": [
+            "Regular seminars and guest lectures are conducted by industry experts to keep students updated with the latest trends.",
+            "Topics include AI, machine learning, blockchain, entrepreneurship, and more."
+        ],
+        "default": [
+            "BFCET hosts a variety of technical, cultural, and sports events throughout the year. Stay tuned for upcoming events!",
+            "Students actively participate in numerous events to develop creativity, teamwork, and leadership skills.",
+            "The institute encourages students to engage in extracurricular activities alongside academics.",
+            "Workshops, guest lectures, and competitions provide students with exposure to industry trends and innovations.",
+            "For event schedules and participation details, visit our college website."
         ]
     },
     "FALLBACK": {
         "default": [
             "I'm sorry, I didn't understand that. Can you rephrase?",
             "Apologies, I couldn't process that. Could you clarify?",
-            "I'm not sure how to help with that. Could you ask in a different way?"
+            "I'm not sure how to help with that. Could you ask in a different way?",
+            "Could you provide more details so I can better assist you?",
+            "I didn't quite catch that. Can you try rewording your question?"
+        ]
+    },
+    "DEFAULT":{
+        "default": [
+            "I may not have that information right now, but you can try rephrasing your question or asking something else about Baba Farid College.",
+            "That’s outside my current knowledge, but I’m here to help with anything related to college life, admissions, or academics!",
+            "Good question! I don’t have the answer at the moment, but you can check with the college helpdesk for accurate details.",
+            "I might not have that information, but our faculty and staff would be happy to assist you. Let me know if you need contact details!",
+            "I don't have details on that, but you can explore our official website or call the college administration for more information."
         ]
     }
 }

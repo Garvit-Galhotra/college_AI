@@ -2,22 +2,21 @@
 
 TRAIN_DATA = [
     #College Overview
-    ("Tell me about the BFCET", {"entities": [(18, 23, "COLLEGE")]}),
-    ("Tell me about the Baba Farid College of Engineering and Technology", {"entities":[(18, 66, "COLLEGE")]}),
-    ("Give an overview of BABA FARID COLLEGE.", {"entities": [(20, 38, "COLLEGE")]}),
-    ("Tell me about Baba Farid College of Engineering and Technology.", {"entities": [(14, 62, "COLLEGE")]}),
+    #("Tell me about the BFCET", {"entities": [(18, 23, "COLLEGE")]}),
+    #("Tell me about the Baba Farid College of Engineering and Technology", {"entities":[(18, 66, "COLLEGE")]}),
+    #("Give an overview of BABA FARID COLLEGE.", {"entities": [(20, 38, "COLLEGE")]}),
+    #("Tell me about Baba Farid College of Engineering and Technology.", {"entities": [(14, 62, "COLLEGE")]}),
     ("What is the Mission of the college?", {"entities": [(12, 19, "MISSION")]}),
     ("Mission Statement of the college?", {"entities": [(0, 7, "MISSION")]}),
     ("Goal of the college?", {"entities": [(0, 4, "MISSION")]}),
     ("What is the Long term Goal of the college?", {"entities": [(22, 26, "MISSION")]}),
-    ("What is the Vision of the college?", {"entities": [(12, 18, "VISSION")]}),
-    ("Vision of the college?", {"entities": [(0, 7, "VISSION")]}),
+    ("What is the Vision of the college?", {"entities": [(12, 18, "VISION")]}),
+    ("Vision of the college?", {"entities": [(0, 7, "VISION")]}),
     ("What are the Core Values of the college?", {"entities": [(13, 24, "VALUES")]}),
     ("What are the Values of the college?", {"entities": [(13, 19, "VALUES")]}),
-    
 
     #Courses
-    ("Does Baba Faird offers MBA or B.tech", {"entities":[(5, 15, "COLLEGE"), (23, 26, "COURSE"), (30, 36, "COURSE")]}),
+    ("Does Baba Faird offers MBA or B.tech", {"entities":[(23, 26, "COURSE"), (30, 36, "COURSE")]}),
     ("Do you offer a Btech program?", {"entities": [(15, 20, "COURSE")]}),
     ("Can I study Mechanical Engineering here?", {"entities": [(12, 34, "COURSE")]}),
     ("Is there a Computer Science Engineering?", {"entities": [(11, 39, "COURSE")]}),
@@ -41,9 +40,6 @@ TRAIN_DATA = [
     ("Do you have an Electrical Engineering department?", {"entities": [(15, 37, "DEPARTMENT")]}),
     ("What can you tell me about the Mechanical Engineering department?", {"entities": [(31, 53, "DEPARTMENT")]}),
 
-    #Admission
-    
-
     #FreeStructure
     ("What is the fee structure for MBA?", {"entities": [(30, 33, "COURSE")]}),
     ("Can you tell me the fee structure for B.Tech?", {"entities": [(38, 44, "COURSE")]}),
@@ -63,16 +59,16 @@ TRAIN_DATA = [
 
     #Faculty
     ("Who is the Head of Department of Computer Science department?", {"entities": [(11, 29, "FACULTY"), (33,49, "DEPARTMENT")]}),
-    ("Can I meet the Principal during office hours?", {"entities": [(15, 24, "FACULTY"), (32,44,"BUSINESS HOURS")]}),
+    ("Can I meet the Principal during office hours?", {"entities": [(15, 24, "FACULTY")]}),
 
     # Campus Facility
     ("Does the college have a library?", {"entities": [(24, 31, "CAMPUS_FACILITY")]}),
     ("Is there a canteen on campus?", {"entities": [(11, 18, "CAMPUS_FACILITY")]}),
     ("Are there any study rooms available?", {"entities": [(14, 25, "CAMPUS_FACILITY")]}),
-    ("Is there a water fountain near the garden?", {"entities": [(11, 25, "CAMPUS_FACILITY"), (35, 41, "FACILITY")]}),
+    ("Is there a water fountain near the garden?", {"entities": [(35, 41, "CAMPUS_FACILITY")]}),
     ("Do students have access to the gym?", {"entities": [(31, 34, "CAMPUS_FACILITY")]}),
     ("Where can I find the student lounge?", {"entities": [(21, 35, "CAMPUS_FACILITY")]}),
-    ("Is there a café near the library?", {"entities": [(11, 15, "FACILITY"), (25, 32, "FACILITY")]}),
+    ("Is there a café near the library?", {"entities": [(11, 15, "CAMPUS_FACILITY"), (25, 32, "CAMPUS_FACILITY")]}),
 
 ]
 

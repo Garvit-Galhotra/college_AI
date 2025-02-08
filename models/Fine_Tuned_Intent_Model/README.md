@@ -4,53 +4,51 @@ tags:
 - sentence-similarity
 - feature-extraction
 - generated_from_trainer
-- dataset_size:1291
+- dataset_size:712
 - loss:CosineSimilarityLoss
-base_model: sentence-transformers/all-MiniLM-L6-v2
+base_model: sentence-transformers/multi-qa-MiniLM-L6-dot-v1
 widget:
-- source_sentence: Are there certifications in programming languages like Python or
-    Java at BFGI?
+- source_sentence: Are there any computer labs with printing services on campus?
   sentences:
-  - Do you offer evening or weekend classes?
-  - What is the schedule for semester exams at BFGI?
-  - Do you offer evening or weekend classes?
-- source_sentence: How does the placement cell at the college assist students with
-    career opportunities?
+  - How dos the prgram cost, and how the fees are set up?
+  - What are the facilities available here?
+  - What are the placement opportunities?
+- source_sentence: Do you know of any research labs that focus on this topic?
   sentences:
-  - What is the schedule for semester exams at BFGI?
-  - Who are some notable alumni?
-  - What is the average placement percentage?
-- source_sentence: Could you tell me about the main focus of your lab’s research?
-  sentences:
-  - Who are some notable alumni?
-  - Are there any research labs available?
   - Do you offer online certification programs?
-- source_sentence: Does BFGI offer certifications in digital marketing?
-  sentences:
-  - What are the key deadlines for applying?
-  - Is there a business school or management department?
-  - Do you offer evening or weekend classes?
-- source_sentence: How can I get involved in presenting my research at conferences?
-  sentences:
-  - Who are some notable alumni?
+  - What is the fee Structure?
   - Are there any research labs available?
-  - What is the average placement percentage?
+- source_sentence: Are there any diploma courses available at BFGI after 12th?
+  sentences:
+  - Can you tell me wut the program costs and how the feez is settup?
+  - Tell me about the College.
+  - Hi
+- source_sentence: Is there a Computer Science department?
+  sentences:
+  - What courses should I take next semester?
+  - What are the placement opportunities?
+  - what are the courses offered?
+- source_sentence: Can I take summer courses to graduate early?
+  sentences:
+  - What courses should I take next semester?
+  - Are there any diploma programs?
+  - What courses should I take next semester?
 pipeline_tag: sentence-similarity
 library_name: sentence-transformers
 ---
 
-# SentenceTransformer based on sentence-transformers/all-MiniLM-L6-v2
+# SentenceTransformer based on sentence-transformers/multi-qa-MiniLM-L6-dot-v1
 
-This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). It maps sentences & paragraphs to a 384-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more.
+This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [sentence-transformers/multi-qa-MiniLM-L6-dot-v1](https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-dot-v1). It maps sentences & paragraphs to a 384-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more.
 
 ## Model Details
 
 ### Model Description
 - **Model Type:** Sentence Transformer
-- **Base model:** [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) <!-- at revision fa97f6e7cb1a59073dff9e6b13e2715cf7475ac9 -->
-- **Maximum Sequence Length:** 256 tokens
+- **Base model:** [sentence-transformers/multi-qa-MiniLM-L6-dot-v1](https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-dot-v1) <!-- at revision 4151c507ffb0f2fcd311cf431f54b5fc7d097851 -->
+- **Maximum Sequence Length:** 512 tokens
 - **Output Dimensionality:** 384 dimensions
-- **Similarity Function:** Cosine Similarity
+- **Similarity Function:** Dot Product
 <!-- - **Training Dataset:** Unknown -->
 <!-- - **Language:** Unknown -->
 <!-- - **License:** Unknown -->
@@ -65,9 +63,8 @@ This is a [sentence-transformers](https://www.SBERT.net) model finetuned from [s
 
 ```
 SentenceTransformer(
-  (0): Transformer({'max_seq_length': 256, 'do_lower_case': False}) with Transformer model: BertModel 
-  (1): Pooling({'word_embedding_dimension': 384, 'pooling_mode_cls_token': False, 'pooling_mode_mean_tokens': True, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False, 'pooling_mode_weightedmean_tokens': False, 'pooling_mode_lasttoken': False, 'include_prompt': True})
-  (2): Normalize()
+  (0): Transformer({'max_seq_length': 512, 'do_lower_case': False}) with Transformer model: BertModel 
+  (1): Pooling({'word_embedding_dimension': 384, 'pooling_mode_cls_token': True, 'pooling_mode_mean_tokens': False, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False, 'pooling_mode_weightedmean_tokens': False, 'pooling_mode_lasttoken': False, 'include_prompt': True})
 )
 ```
 
@@ -89,9 +86,9 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("sentence_transformers_model_id")
 # Run inference
 sentences = [
-    'How can I get involved in presenting my research at conferences?',
-    'Are there any research labs available?',
-    'Who are some notable alumni?',
+    'Can I take summer courses to graduate early?',
+    'What courses should I take next semester?',
+    'What courses should I take next semester?',
 ]
 embeddings = model.encode(sentences)
 print(embeddings.shape)
@@ -146,19 +143,19 @@ You can finetune this model on your own dataset.
 #### Unnamed Dataset
 
 
-* Size: 1,291 training samples
+* Size: 712 training samples
 * Columns: <code>sentence_0</code>, <code>sentence_1</code>, and <code>label</code>
-* Approximate statistics based on the first 1000 samples:
-  |         | sentence_0                                                                        | sentence_1                                                                       | label                                                         |
-  |:--------|:----------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|:--------------------------------------------------------------|
-  | type    | string                                                                            | string                                                                           | float                                                         |
-  | details | <ul><li>min: 3 tokens</li><li>mean: 13.72 tokens</li><li>max: 26 tokens</li></ul> | <ul><li>min: 3 tokens</li><li>mean: 9.54 tokens</li><li>max: 13 tokens</li></ul> | <ul><li>min: 1.0</li><li>mean: 1.0</li><li>max: 1.0</li></ul> |
+* Approximate statistics based on the first 712 samples:
+  |         | sentence_0                                                                        | sentence_1                                                                       | label                                                          |
+  |:--------|:----------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|:---------------------------------------------------------------|
+  | type    | string                                                                            | string                                                                           | float                                                          |
+  | details | <ul><li>min: 6 tokens</li><li>mean: 13.14 tokens</li><li>max: 27 tokens</li></ul> | <ul><li>min: 3 tokens</li><li>mean: 9.06 tokens</li><li>max: 25 tokens</li></ul> | <ul><li>min: 0.0</li><li>mean: 0.77</li><li>max: 1.0</li></ul> |
 * Samples:
-  | sentence_0                                                | sentence_1                                             | label            |
-  |:----------------------------------------------------------|:-------------------------------------------------------|:-----------------|
-  | <code>Are online classes available for my degree? </code> | <code>What courses should I take next semester?</code> | <code>1.0</code> |
-  | <code> Can I pursue event management at BFGI?</code>      | <code>Do you offer evening or weekend classes?</code>  | <code>1.0</code> |
-  | <code>How’s the schedule looking for you? </code>         | <code>How are you today?</code>                        | <code>1.0</code> |
+  | sentence_0                                                                          | sentence_1                                              | label            |
+  |:------------------------------------------------------------------------------------|:--------------------------------------------------------|:-----------------|
+  | <code>Are there any resources to help me find a faculty mentor for research?</code> | <code>Are there any research labs available?</code>     | <code>1.0</code> |
+  | <code>Does the college have Wi-Fi facilities?</code>                                | <code>Who currentley leads the Depatment of SSD?</code> | <code>0.0</code> |
+  | <code>How many departments have research centers or institutes?</code>              | <code>How many Departments do you have?</code>          | <code>1.0</code> |
 * Loss: [<code>CosineSimilarityLoss</code>](https://sbert.net/docs/package_reference/sentence_transformer/losses.html#cosinesimilarityloss) with these parameters:
   ```json
   {
