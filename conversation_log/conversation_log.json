@@ -1,0 +1,102 @@
+[
+    {
+        "query": "hi there",
+        "response": "Warm greetings from Baba Farid College! Let me know if you need any information."
+    },
+    {
+        "query": "tell me about the college",
+        "response": "Baba Farid College of Engineering & Technology (BFCET) is a leading educational institution in Punjab, managed by Baba Farid Vidyak Society <a href='https://www.bfcet.com/' target='_blank'>Visit us</a>Now!!"
+    },
+    {
+        "query": "what is the mission statement of the college",
+        "response": "Promoting ethical values, sustainability, and social well-being, ensuring students become responsible citizens and innovators for a better tomorrow.\nWould you like to know more about our vision and mission?"
+    },
+    {
+        "query": "what is the mission statement of the college",
+        "response": "Equipping students with industry-relevant skills, including communication, teamwork, and problem-solving, to make them future-ready technocrats.\nCan I provide you with details about our unique features and facilities?"
+    },
+    {
+        "query": "what are the courses of",
+        "response": "Could you provide more details so I can better assist you?"
+    },
+    {
+        "query": "tell me about the courses offered at the college",
+        "response": "We offer B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs. Check our <a href='https://www.bfcet.com/programme-offered/' target='_blank'>website</a> for details.\nWould you like to know more about the specializations available in our B.Tech program?"
+    },
+    {
+        "query": "yes please",
+        "response": "Welcome! Whether you're a student, parent, or visitor, I'm here to help with any college-related queries.\nAre you interested in learning about our placement opportunities?"
+    },
+    {
+        "query": "tell me about the btech course at this college",
+        "response": "I don't have details on that, but you can explore our official website or call the college administration for more information."
+    },
+    {
+        "query": "give me more information about btech course in this college",
+        "response": "I don't have details on that, but you can explore our official website or call the college administration for more information."
+    },
+    {
+        "query": "does this college offer btech course",
+        "response": "The B.Tech program focuses on practical learning, industry exposure, and skill development.\nAre you interested in learning about the career opportunities for graduates of our Computer Science Engineering program?"
+    },
+    {
+        "query": "that's all thank you",
+        "response": "Welcome! Whether you're a student, parent, or visitor, I'm here to help with any college-related queries.\nWould you like to hear about our college's Mission?"
+    },
+    {
+        "query": "tell me about the college",
+        "response": "Baba Farid College of Engineering & Technology (BFCET) is a leading educational institution in Punjab, managed by Baba Farid Vidyak Society\nAre you interested in learning about the values we uphold at Baba Farid College?"
+    },
+    {
+        "query": "tell me about",
+        "response": "Hey! Hope you're having a great day. How can I assist you with Baba Farid College?\nWould you like to know about the admission process at Baba Farid College?"
+    },
+    {
+        "query": "tell me",
+        "response": "Hey! Hope you're having a great day. How can I assist you with Baba Farid College?\nWould you like to know about the admission process at Baba Farid College?"
+    },
+    {
+        "query": "what is",
+        "response": "I'm not sure how to help with that. Could you ask in a different way?"
+    },
+    {
+        "query": "treatment",
+        "response": "I don't have details on that, but you can explore our official website or call the college administration for more information."
+    },
+    {
+        "query": "college",
+        "response": "Hello! At Baba Farid College, we believe in shaping bright futures. How can I assist you today?\nWould you like to know about the admission process at Baba Farid College?"
+    },
+    {
+        "query": "tell me about the",
+        "response": "Baba Farid College of Engineering & Technology (BFCET) is a leading educational institution in Punjab, managed by Baba Farid Vidyak Society\nWould you like to hear about our college's Vision?"
+    },
+    {
+        "query": "college",
+        "response": "Hello! At Baba Farid College, we believe in shaping bright futures. How can I assist you today?\nWould you like to know About the Courses Offered at Baba Farid College?"
+    },
+    {
+        "query": "what is the mission statement of",
+        "response": "Warm greetings from Baba Farid College! Let me know if you need any information.\nWould you like to know About the Courses Offered at Baba Farid College?"
+    },
+    {
+        "query": "yes please",
+        "response": "Hi and welcome to Baba Farid College! We're happy to help. What would you like to know?\nWould you like to know about the placement Oppurtunities inside and outside the college?"
+    },
+    {
+        "query": "what are the",
+        "response": "I'm sorry, I didn't understand that. Can you rephrase?"
+    },
+    {
+        "query": "courses offered",
+        "response": "We offer B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs. Check our website BFCET.COM for details.\nCan I assist you with information about the admission process for our MBA program?"
+    },
+    {
+        "query": "world college tell me about the college",
+        "response": "BFCET offers undergraduate (B.Tech) programs in multiple engineering disciplines and a postgraduate (M.Tech) program in Computer Science & Engineering\nWould you like to know more about the Core Values of the Baba Farid College?"
+    },
+    {
+        "query": "open HDFC",
+        "response": "Welcome! Whether you're a student, parent, or visitor, I'm here to help with any college-related queries.\nWould you like to know about the placement Oppurtunities inside and outside the college?"
+    }
+]

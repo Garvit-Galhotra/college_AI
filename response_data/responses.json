@@ -6,6 +6,13 @@
             "Hello! At Baba Farid College, we believe in shaping bright futures. How can I assist you today?",
             "Warm greetings from Baba Farid College! Let me know if you need any information.",
             "Welcome! Whether you're a student, parent, or visitor, I'm here to help with any college-related queries."
+        ],
+        "followup": [
+            "Would you like to know about the Overview of the College?",
+            "Would you like to know About the Courses Offered at Baba Farid College?",
+            "Would you like to know about the admission process at Baba Farid College?",
+            "Would you like to know about the Free Stucture of the Courses?",
+            "Would you like to know about the placement Oppurtunities inside and outside the college?"
         ]
     },
     "COLLEGE_OVERVIEW": {
@@ -44,11 +51,17 @@
             "Bathinda has a strong industrial base, featuring thermal power plants, National Fertilizers Limited, Ambuja Cement, Bathinda Chemicals, and Vardhman Polytex. The Guru Gobind Singh Refinery Limited, a major investment project involving industrialist Lakshmi Niwas Mittal, has further boosted its economic significance.",
             "The city is home to Asia’s largest Army cantonment and an Air Force station at Bhisiana. Tourist attractions like big lakes, malls, an airport, Chetak Park, and a Mini Zoo have put Bathinda on the tourist map of India."
         ],
+        "followup": [
+            "Would you like to know more about our Courses offered at Baba Farid College?",
+            "Would you like to know more about the Core Values of the Baba Farid College?",
+            "Would you like to hear about our college's Vision?",
+            "Would you like to hear about our college's Mission?"
+        ],
         "default": [
-            "Baba Farid College of Engineering & Technology (BFCET) is a leading educational institution in Punjab, managed by Baba Farid Vidyak Society <a href='https://www.bfcet.com/' target='_blank'>Visit us</a>Now!!",
-            "Under the visionary leadership of Dr. Gurmeet Singh Dhaliwal (Chairman & Bharat Jyoti Awardee), BFCET offers a state-of-the-art learning environment with modern labs, excellent infrastructure, and experienced faculty<a href='https://www.bfcet.com/' target='_blank'>Visit us</a>Now!!",
-            "The college is committed to equipping students with practical skills to thrive in the rapidly evolving world of technology <a href='https://www.bfcet.com/' target='_blank'>Visit us</a>Now!!",
-            "BFCET offers undergraduate (B.Tech) programs in multiple engineering disciplines and a postgraduate (M.Tech) program in Computer Science & Engineering <a href='https://www.bfcet.com/' target='_blank'>Visit us</a>Now!!"
+            "Baba Farid College of Engineering & Technology (BFCET) is a leading educational institution in Punjab, managed by Baba Farid Vidyak Society",
+            "Under the visionary leadership of Dr. Gurmeet Singh Dhaliwal (Chairman & Bharat Jyoti Awardee), BFCET offers a state-of-the-art learning environment with modern labs, excellent infrastructure, and experienced faculty",
+            "The college is committed to equipping students with practical skills to thrive in the rapidly evolving world of technology ",
+            "BFCET offers undergraduate (B.Tech) programs in multiple engineering disciplines and a postgraduate (M.Tech) program in Computer Science & Engineering"
         ]
     },
     "COURSE_QUERY": {
@@ -150,8 +163,15 @@
             "Students get hands-on experience through workshops and industry projects.",
             "Career options include technician, junior engineer, and technical consultant."
         ],
+        "followup": [
+            "Would you like to know more about the specializations available in our B.Tech program?",
+            "Can I provide you with details about the curriculum and industry collaborations for our AI & ML courses?",
+            "Are you interested in learning about the career opportunities for graduates of our Computer Science Engineering program?",
+            "Would you like to hear more about the practical training and internships offered in our Civil Engineering course?",
+            "Can I assist you with information about the admission process for our MBA program?"
+        ],
         "default": [
-            "We offer B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs. Check our <a href='https://www.bfcet.com/programme-offered/' target='_blank'>website</a> for details."
+            "We offer B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs. Check our website BFCET.COM for details."
         ]
     },
     "ADMISSION_QUERY": {
@@ -160,7 +180,7 @@
             "Admissions are based on merit and entrance exams like JEE Main or state-level engineering tests.",
             "Candidates must fill out the online application form and submit the required documents.",
             "Direct admission may be available for students with exceptional academic records.",
-            "For detailed admission criteria, visit our <a href='https://www.bfcet.com/admissions/' target='_blank'>website</a>."
+            "For detailed admission criteria, visit our website BFCET.COM"
         ],
         "btechaiml": [
             "Eligibility for B.Tech AI & ML requires passing 12th grade with PCM subjects.",
@@ -253,11 +273,18 @@
             "Internships and live projects enhance learning and employability.",
             "Scholarship options are available for deserving students."
         ],
+        "followup": [
+            "Would you like to know more about the eligibility criteria for our programs?",
+            "Can I provide you with details about the entrance exams required for admission?",
+            "Are you interested in learning about the scholarship opportunities available?",
+            "Would you like to hear more about the application process and required documents?",
+            "Can I assist you with information about the counseling and selection process?"
+        ],
         "default": [
             "Admissions are open for various courses, including B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs.",
             "Candidates must meet the eligibility criteria and submit required documents for admission.",
             "Scholarships and financial aid are available for meritorious students.",
-            "For detailed admission information, visit our <a href='https://www.bfcet.com/admissions/' target='_blank'>website</a>.",
+            "For detailed admission information, visit our website BFCET.COM",
             "Contact our admission office for any queries related to courses, fees, and application procedures."
         ]
     },
@@ -267,105 +294,105 @@
             "It includes tuition fees, examination fees, and other miscellaneous charges.",
             "Hostel and mess charges are separate for students opting for on-campus accommodation.",
             "Scholarships and financial aid are available for meritorious students.",
-            "For detailed B.Tech fee structure, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "For detailed B.Tech fee structure, visit our website BFCET.COM"
         ],
         "btechaiml": [
             "The fee for B.Tech AI & ML covers tuition, lab charges, and infrastructure fees.",
             "Students can avail of installment-based payment options.",
             "Additional charges apply for industry training and AI lab access.",
             "Scholarships for top-performing students and need-based financial aid are available.",
-            "Detailed fee structure is available on our official <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "Detailed fee structure is available on our official on our our website BFCET.COM"
         ],
         "btechcse": [
             "B.Tech CSE fees include tuition, software lab access, and infrastructure charges.",
             "Students may have to pay extra for industry certifications and specialized courses.",
             "Scholarships are provided for high-scoring students in entrance exams.",
             "Loan facilities are available through partnered banks.",
-            "For a breakdown of fees, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "For a breakdown of fees, visit our our website BFCET.COM"
         ],
         "btechiot": [
             "B.Tech IoT fee structure includes tuition, lab charges, and IoT device access.",
             "Students must pay an additional fee for hands-on IoT training modules.",
             "Scholarships are offered based on academic excellence and financial need.",
             "Flexible payment options are available for students.",
-            "Visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a> for details."
+            "Visit our our website BFCET.COM"
         ],
         "civilengineering": [
             "B.Tech Civil Engineering fees include tuition, field training, and laboratory expenses.",
             "Students may have additional costs for project materials and site visits.",
             "Scholarship schemes are available for academically outstanding students.",
             "Loan assistance is provided through approved financial institutions.",
-            "Check our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a> for detailed fee information."
+            "Check our our website BFCET.COM for detailed fee information."
         ],
         "electricalengineering": [
             "B.Tech Electrical Engineering fees cover tuition, lab usage, and practical training.",
             "Additional charges may apply for software and hardware-based workshops.",
             "Students can apply for merit-based scholarships and need-based financial aid.",
             "Loan facilities are available in partnership with leading banks.",
-            "For a detailed fee breakdown, refer to our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "For a detailed fee breakdown, refer to our website BFCET.COM"
         ],
         "mechanicalengineering": [
             "B.Tech Mechanical Engineering fees include tuition, lab access, and workshop training.",
             "Additional charges apply for industrial visits and hands-on machine learning.",
             "Scholarships and financial aid options are available for deserving students.",
             "Students can opt for flexible payment schemes and loan assistance.",
-            "For complete fee details, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "For complete fee details, visit our website BFCET.COM"
         ],
         "mtech": [
             "M.Tech fees depend on the specialization and include tuition, lab, and research fees.",
             "GATE-qualified students may be eligible for tuition fee waivers or stipends.",
             "Students are required to pay additional charges for research projects and publications.",
             "Loan and financial aid options are available for eligible candidates.",
-            "For a detailed M.Tech fee structure, check our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "For a detailed M.Tech fee structure, check our website BFCET.COM"
         ],
         "mba": [
             "MBA fee structure covers tuition, case study materials, and business workshops.",
             "Additional charges may apply for industry visits and leadership training programs.",
             "Students can avail themselves of scholarships based on academic performance.",
             "Loan facilities are available for students requiring financial assistance.",
-            "For MBA fee details, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "For MBA fee details, visit our website BFCET.COM"
         ],
         "bsc": [
             "B.Sc program fees vary based on specialization and include lab and practical session fees.",
             "Students can opt for installment-based payments for fee submission.",
             "Scholarships are provided for students excelling in academics.",
             "Loan assistance is available through banking partners.",
-            "Check our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a> for a detailed fee structure."
+            "Check our website BFCET.COM for a detailed fee structure."
         ],
         "bca": [
             "BCA fees cover tuition, computer lab access, and software subscriptions.",
             "Students can pay additional fees for specialized IT certifications.",
             "Scholarships are available based on merit and financial need.",
             "Loan facilities are available through partnered financial institutions.",
-            "For more details, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "For more details, visit ourwebsite BFCET.COM"
         ],
         "bcaaiml": [
             "BCA AI & ML fees include tuition, AI lab access, and cloud computing subscriptions.",
             "Students may have to pay additional fees for industry training and research projects.",
             "Scholarships are available for top-performing students.",
             "Flexible fee payment options and loan facilities are offered.",
-            "Visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a> for details."
+            "Visit our website BFCET.COM for details."
         ],
         "bba": [
             "BBA fees cover tuition, business case study materials, and entrepreneurship training.",
             "Students may have to pay additional charges for business simulation software.",
             "Scholarships and financial aid are available for meritorious students.",
             "Loan facilities are provided in collaboration with banks.",
-            "For a detailed fee structure, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "For a detailed fee structure, visit ourwebsite BFCET.COM"
         ],
         "diploma": [
             "Diploma fees vary based on specialization and include tuition and practical training costs.",
             "Additional charges apply for industrial visits and hands-on skill development programs.",
             "Scholarships are available for students with exceptional academic records.",
             "Loan facilities and flexible payment options are provided for students.",
-            "For diploma course fee details, refer to our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "For diploma course fee details, refer to ourwebsite BFCET.COM"
         ],
         "default": [
             "Our institution offers various courses, including B.Tech, M.Tech, MBA, BBA, BCA, and diploma programs.",
             "The fee structure varies based on the course and specialization.",
             "Students can apply for scholarships and financial aid based on merit and need.",
             "Loan assistance is available in collaboration with banking institutions.",
-            "For complete fee details, visit our <a href='https://www.bfcet.com/fees/' target='_blank'>website</a>."
+            "For complete fee details, visit ourwebsite BFCET.COM"
         ]
     },
     "CAMPUS_QUERY": {

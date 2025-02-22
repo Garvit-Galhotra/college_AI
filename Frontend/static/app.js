@@ -1,51 +1,95 @@
-// Function to send a message and receive a response from the backend
-async function sendMessage() {
-    const userInput = document.getElementById('userInput').value;
-    if (!userInput) return;  // Prevent sending empty messages
+document.addEventListener("DOMContentLoaded", function () {
+    const micButtons = document.querySelectorAll(".micButton");
 
-    // Display user's message at the bottom
-    displayMessage(userInput, 'user');
+    if (!micButtons.length) {
+        console.error("No mic buttons found in the document.");
+        return;
+    }
 
-    // Send message to backend
-    const response = await fetch('/chat', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ message: userInput }),
+    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+
+    if (!recognition) {
+        console.error("Speech recognition is not supported in this browser.");
+        return;
+    }
+
+    recognition.lang = "en-US";
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    micButtons.forEach((micButton) => {
+        micButton.addEventListener("click", function () {
+            startRecording(micButton);
+        });
     });
 
-    const data = await response.json();
-    const botResponse = data.response;
+    function startRecording(micButton) {
+        try {
+            micButton.classList.add("recording");
+            micButton.innerHTML = "🎤 Listening...";
+            recognition.start();
+        } catch (error) {
+            console.error("Error starting speech recognition:", error);
+        }
+    }
 
-    // Display bot's response at the bottom
-    displayMessage(botResponse, 'bot');
+    recognition.onstart = function () {
+        console.log("Recognition started");
+    };
 
-    // Clear input field
-    document.getElementById('userInput').value = '';
-}
+    recognition.onresult = function (event) {
+        const transcript = event.results[0][0].transcript;
+        console.log("User said:", transcript);
 
-// Function to display messages in the chat
-function displayMessage(message, sender) {
-    const chatMessages = document.querySelector('.chat-messages');
+        micButtons.forEach((micButton) => {
+            micButton.classList.remove("recording");
+            micButton.innerHTML = "🎙️";
+        });
 
-    // Create new message div
-    const messageDiv = document.createElement('div');
-    messageDiv.classList.add('chat-message', sender);
-    messageDiv.textContent = message;
+        sendMessage(transcript);
+    };
 
-    // Append message to the chat (at the bottom)
-    chatMessages.appendChild(messageDiv);
+    recognition.onspeechend = function () {
+        console.log("Speech ended, stopping recognition...");
+        recognition.stop();
+    };
 
-    // Scroll to the bottom
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-}
+    recognition.onerror = function (event) {
+        console.error("Speech recognition error:", event.error);
+        micButtons.forEach((micButton) => {
+            micButton.classList.remove("recording");
+            micButton.innerHTML = "❌ Error";
+        });
+        setTimeout(() => {
+            micButtons.forEach((micButton) => {
+                micButton.innerHTML = "🎙️";
+            });
+        }, 2000);
+    };
 
-// Optional: Enable sending messages when pressing Enter
-document.getElementById('userInput').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') {
-        sendMessage();
+    function sendMessage(message) {
+        console.log("Sending message:", message);
+
+        fetch("/chat", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ user_message: message }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Bot response:", data);
+            const botMessage = data.response || "I'm not sure how to respond.";
+            speakResponse(botMessage);
+        })
+        .catch(error => {
+            console.error("Error sending message:", error);
+        });
+    }
+
+    function speakResponse(text) {
+        console.log("Speaking response:", text);
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = "en-US";
+        window.speechSynthesis.speak(utterance);
     }
 });
-
-

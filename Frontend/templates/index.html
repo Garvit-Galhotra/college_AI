@@ -4,20 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
+    <title>Voice-Enabled AI Chat</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        .container {
+            position: relative;
+            width: 12cm;
+            height: 12cm;
+        }
+
+        .image-container {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image {
+            width: 6cm;
+            height: 6cm;
+        }
+
+        .mic-icon {
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+            padding: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .mic-icon:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        .mic-icon.recording {
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+
+        /* Positioning */
+        .top {
+            top: -7cm;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .bottom {
+            bottom: -7cm;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .left {
+            left: -7cm;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+        }
+
+        .right {
+            right: -7cm;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
 </head>
 
 <body>
-
-    <div class="chat-container">
-        <div class="chat-messages">
-            <!-- Chat messages will appear here -->
+    <div class="container">
+        <!-- Top Image + Mic -->
+        <div class="image-container top">
+            <img src="{{ url_for('static', filename='Images/ChatBot_AI_image_Lower.png') }}" alt="Chatbot AI"
+                class="image">
+            <span class="micButton mic-icon">🎙️</span>
         </div>
-        <div class="chat-input">
-            <input type="text" id="userInput" placeholder="Type your message...">
-            <button onclick="sendMessage()">Send</button>
+
+        <!-- Bottom Image + Mic -->
+        <div class="image-container bottom">
+            <span class="micButton mic-icon">🎙️</span>
+            <img src="{{ url_for('static', filename='Images/ChatBot_AI_image_Upper.png') }}" alt="Chatbot AI"
+                class="image">
+        </div>
+
+        <!-- Left Image + Mic -->
+        <div class="image-container left">
+            <img src="{{ url_for('static', filename='Images/ChatBot_AI_image_Lower.png') }}" alt="Chatbot AI"
+                class="image">
+            <span class="micButton mic-icon">🎙️</span>
+        </div>
+
+        <!-- Right Image + Mic -->
+        <div class="image-container right">
+            <img src="{{ url_for('static', filename='Images/ChatBot_AI_image_Left.png') }}" alt="Chatbot AI"
+                class="image">
+            <span class="micButton mic-icon">🎙️</span>
         </div>
     </div>
 
