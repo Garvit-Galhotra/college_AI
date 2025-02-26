@@ -1,11 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const micButtons = document.querySelectorAll(".micButton");
-
-    if (!micButtons.length) {
-        console.error("No mic buttons found in the document.");
-        return;
-    }
-
     const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
 
     if (!recognition) {
@@ -14,20 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     recognition.lang = "en-US";
-    recognition.continuous = false;
-    recognition.interimResults = false;
+    recognition.continuous = true;  // Keep the microphone on 24/7
+    recognition.interimResults = true; // Allow continuous results during speech
 
-    micButtons.forEach((micButton) => {
-        micButton.addEventListener("click", function () {
-            startRecording(micButton);
-        });
-    });
+    // Start the recognition as soon as the page loads
+    startRecording();
 
-    function startRecording(micButton) {
+    function startRecording() {
         try {
-            micButton.classList.add("recording");
-            micButton.innerHTML = "🎤 Listening...";
             recognition.start();
+            console.log("Voice recognition started.");
         } catch (error) {
             console.error("Error starting speech recognition:", error);
         }
@@ -41,34 +30,20 @@ document.addEventListener("DOMContentLoaded", function () {
         const transcript = event.results[0][0].transcript;
         console.log("User said:", transcript);
 
-        micButtons.forEach((micButton) => {
-            micButton.classList.remove("recording");
-            micButton.innerHTML = "🎙️";
-        });
-
-        sendMessage(transcript);
+        sendMessageToBackend(transcript);
     };
 
     recognition.onspeechend = function () {
-        console.log("Speech ended, stopping recognition...");
-        recognition.stop();
+        console.log("Speech ended, continuing to listen...");
+        recognition.start();  // Automatically restart recognition after speech ends
     };
 
     recognition.onerror = function (event) {
         console.error("Speech recognition error:", event.error);
-        micButtons.forEach((micButton) => {
-            micButton.classList.remove("recording");
-            micButton.innerHTML = "❌ Error";
-        });
-        setTimeout(() => {
-            micButtons.forEach((micButton) => {
-                micButton.innerHTML = "🎙️";
-            });
-        }, 2000);
     };
 
-    function sendMessage(message) {
-        console.log("Sending message:", message);
+    function sendMessageToBackend(message) {
+        console.log("Sending message to backend:", message);
 
         fetch("/chat", {
             method: "POST",
@@ -79,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             console.log("Bot response:", data);
             const botMessage = data.response || "I'm not sure how to respond.";
-            speakResponse(botMessage);
+            speakResponse(botMessage);  // Speak bot response
         })
         .catch(error => {
             console.error("Error sending message:", error);

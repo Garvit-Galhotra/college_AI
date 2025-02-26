@@ -150,7 +150,7 @@ train_examples = [
     InputExample(texts=["What programs I can join after 12th?", "What is the fee Structure?"], label=0.0),
     InputExample(texts=["Do you offer undergraduate courses?", "How much does a program cost"], label=0.1),
     InputExample(texts=["Are there any diploma programs?", "Can you give me an idear of wut the progam cost and how the feez are set up?"], label=0.2),
-    InputExample(texts=["What undergraduate programs does BFGI offer after 12th?", "How dos the prgram cost, and how the fees are set up?"], label=0.0),
+    InputExample(texts=["What undergraduate programs does BFGI offer after 12th?", "what is the fee structure"], label=0.0),
     InputExample(texts=["Are there any diploma courses available at BFGI after 12th?","Can you tell me wut the program costs and how the feez is settup?"], label=0.1),
     InputExample(texts=["What programs I can join after 12th?", "What is the average placement percentage?"], label=0.1),
     InputExample(texts=["Do you offer undergraduate courses?","What are the placement opportunities?"], label=0.0),

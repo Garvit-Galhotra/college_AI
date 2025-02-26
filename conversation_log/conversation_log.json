@@ -98,5 +98,217 @@
     {
         "query": "open HDFC",
         "response": "Welcome! Whether you're a student, parent, or visitor, I'm here to help with any college-related queries.\nWould you like to know about the placement Oppurtunities inside and outside the college?"
+    },
+    {
+        "query": "tell me about the courses",
+        "response": "We offer B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs. Check our website BFCET.COM for details.\nCan I provide you with details about the curriculum and industry collaborations for our AI & ML courses?"
+    },
+    {
+        "query": "hello",
+        "response": "Warm greetings from Baba Farid College! Let me know if you need any information.\nWould you like to know about the Free Stucture of the Courses?"
+    },
+    {
+        "query": "what is the volume",
+        "response": "I didn't quite catch that. Can you try rewording your question?"
+    },
+    {
+        "query": "is the vision paisa vision vision vision",
+        "response": "I'm sorry, I didn't understand that. Can you rephrase?\nI'm sorry, I didn't understand that. Can you rephrase?\nI'm sorry, I didn't understand that. Can you rephrase?\nI'm not sure how to help with that. Could you ask in a different way?"
+    },
+    {
+        "query": "vision",
+        "response": "Welcome! Whether you're a student, parent, or visitor, I'm here to help with any college-related queries.\nWould you like to know about the placement Oppurtunities inside and outside the college?"
+    },
+    {
+        "query": "what are the campus facilities available",
+        "response": "The college ensures students have access to world-class amenities, fostering a seamless learning experience."
+    },
+    {
+        "query": "khada nahin hota",
+        "response": "Warm greetings from Baba Farid College! Let me know if you need any information.\nWould you like to know about the Overview of the College?"
+    },
+    {
+        "query": "war",
+        "response": "Hey! Hope you're having a great day. How can I assist you with Baba Farid College?\nWould you like to know about the Free Stucture of the Courses?"
+    },
+    {
+        "query": "yes tell",
+        "response": "Welcome! Whether you're a student, parent, or visitor, I'm here to help with any college-related queries.\nWould you like to know about the placement Oppurtunities inside and outside the college?"
+    },
+    {
+        "query": "none",
+        "response": "Hi and welcome to Baba Farid College! We're happy to help. What would you like to know?\nWould you like to know about the Overview of the College?"
+    },
+    {
+        "query": "tell me about the",
+        "response": "Baba Farid College of Engineering & Technology (BFCET) is a leading educational institution in Punjab, managed by Baba Farid Vidyak Society\nWould you like to hear about our college's Vision?"
+    },
+    {
+        "query": "courses",
+        "response": "I may not have that information right now, but you can try rephrasing your question or asking something else about Baba Farid College."
+    },
+    {
+        "query": "btech course",
+        "response": "That’s outside my current knowledge, but I’m here to help with anything related to college life, admissions, or academics!"
+    },
+    {
+        "query": "give me information about",
+        "response": "BFCET offers undergraduate (B.Tech) programs in multiple engineering disciplines and a postgraduate (M.Tech) program in Computer Science & Engineering\nWould you like to hear about our college's Mission?"
+    },
+    {
+        "query": "give me information about btech course",
+        "response": "B.Tech is a four-year undergraduate program offering specializations in engineering fields like AI, CSE, Mechanical, and more.\nAre you interested in learning about the career opportunities for graduates of our Computer Science Engineering program?"
+    },
+    {
+        "query": "yes give me information about mtech course",
+        "response": "Career options include research scientist, software architect, and university lecturer.\nWould you like to know more about the specializations available in our B.Tech program?"
+    },
+    {
+        "query": "new model",
+        "response": "Welcome! Whether you're a student, parent, or visitor, I'm here to help with any college-related queries.\nWould you like to know about the admission process at Baba Farid College?"
+    },
+    {
+        "query": "what are the departments in this college how many how many departments are in this college",
+        "response": "I'm not sure how to help with that. Could you ask in a different way?"
+    },
+    {
+        "query": "how many departments are in this college",
+        "response": "I'm sorry, I didn't understand that. Can you rephrase?"
+    },
+    {
+        "query": "does this college have mechanical department",
+        "response": "I'm sorry, I didn't understand that. Can you rephrase?"
+    },
+    {
+        "query": "does this college have sst department",
+        "response": "Apologies, I couldn't process that. Could you clarify?"
+    },
+    {
+        "query": "does this college have gym",
+        "response": "We have a modern gym with professional trainers for student fitness."
+    },
+    {
+        "query": "does this college have a library",
+        "response": "BFCET's library provides a quiet and resourceful environment for students."
+    },
+    {
+        "query": "does this college have cafeteria",
+        "response": "BFCET offers undergraduate (B.Tech) programs in multiple engineering disciplines and a postgraduate (M.Tech) program in Computer Science & Engineering\nWould you like to hear about our college's Mission?"
+    },
+    {
+        "query": "phone number",
+        "response": "Hi and welcome to Baba Farid College! We're happy to help. What would you like to know?\nWould you like to know about the Free Stucture of the Courses?"
+    },
+    {
+        "query": "what is the fee structure of btech",
+        "response": "I'm not sure how to help with that. Could you ask in a different way?"
+    },
+    {
+        "query": "what is the fee structure of btech cse",
+        "response": "I'm sorry, I didn't understand that. Can you rephrase?\nI'm sorry, I didn't understand that. Can you rephrase?"
+    },
+    {
+        "query": "what is the fee structure",
+        "response": "Apologies, I couldn't process that. Could you clarify?"
+    },
+    {
+        "query": "how much does the btech course cost at baba free",
+        "response": "I'm sorry, I didn't understand that. Can you rephrase?"
+    },
+    {
+        "query": "statement of the college",
+        "response": "Under the visionary leadership of Dr. Gurmeet Singh Dhaliwal (Chairman & Bharat Jyoti Awardee), BFCET offers a state-of-the-art learning environment with modern labs, excellent infrastructure, and experienced faculty\nWould you like to know more about the Core Values of the Baba Farid College?"
+    },
+    {
+        "query": "does this college have hostel available for students",
+        "response": "I didn't quite catch that. Can you try rewording your question?"
+    },
+    {
+        "query": "hostel",
+        "response": "Welcome! Whether you're a student, parent, or visitor, I'm here to help with any college-related queries.\nWould you like to know About the Courses Offered at Baba Farid College?"
+    },
+    {
+        "query": "hostel facilities available for students",
+        "response": "Could you provide more details so I can better assist you?"
+    },
+    {
+        "query": "does this college have hostel facilities available for students",
+        "response": "I'm not sure how to help with that. Could you ask in a different way?"
+    },
+    {
+        "query": "does this college have medical facilities for students",
+        "response": "With modern infrastructure and a student-friendly atmosphere, the campus is designed for holistic development."
+    },
+    {
+        "query": "what are the facilities available at baba",
+        "response": "Could you provide more details so I can better assist you?"
+    },
+    {
+        "query": "munh mein laane wali baat college offer internships",
+        "response": "Good question! I don’t have the answer at the moment, but you can check with the college helpdesk for accurate details."
+    },
+    {
+        "query": "lene wali baat",
+        "response": "Hello! At Baba Farid College, we believe in shaping bright futures. How can I assist you today?\nWould you like to know about the Free Stucture of the Courses?"
+    },
+    {
+        "query": "college offer internship",
+        "response": "Apologies, I couldn't process that. Could you clarify?"
+    },
+    {
+        "query": "college offer internships program",
+        "response": "Apologies, I couldn't process that. Could you clarify?"
+    },
+    {
+        "query": "what is the mission statement of the college",
+        "response": "Equipping students with industry-relevant skills, including communication, teamwork, and problem-solving, to make them future-ready technocrats.\nWould you like to hear about our college's Vision?"
+    },
+    {
+        "query": "hello",
+        "response": "Hi and welcome to Baba Farid College! We're happy to help. What would you like to know?\nWould you like to know about the admission process at Baba Farid College?"
+    },
+    {
+        "query": "yes i would like to know",
+        "response": "Hello! At Baba Farid College, we believe in shaping bright futures. How can I assist you today?\nWould you like to know about the Overview of the College?"
+    },
+    {
+        "query": "can you tell me about the college",
+        "response": "The college is committed to equipping students with practical skills to thrive in the rapidly evolving world of technology \nWould you like to know more about our Courses offered at Baba Farid College?"
+    },
+    {
+        "query": "punjabi gane",
+        "response": "Hi and welcome to Baba Farid College! We're happy to help. What would you like to know?\nWould you like to know About the Courses Offered at Baba Farid College?"
+    },
+    {
+        "query": "what is the mission statement of the college",
+        "response": "Encouraging students to engage in rural development, women empowerment, health awareness, and environmental protection to contribute positively to society.\nWould you like to know more about our Courses offered at Baba Farid College?"
+    },
+    {
+        "query": "give me information about courses",
+        "response": "We offer B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs. Check our website BFCET.COM for details.\nCan I assist you with information about the admission process for our MBA program?"
+    },
+    {
+        "query": "mission kisi bhi specific course ke bare mein give me information about civil engineering course free",
+        "response": "I don't have details on that, but you can explore our official website or call the college administration for more information."
+    },
+    {
+        "query": "information about civil engineering course at baba farid",
+        "response": "We offer B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs. Check our website BFCET.COM for details.\nCan I assist you with information about the admission process for our MBA program?"
+    },
+    {
+        "query": "tell me about the college",
+        "response": "BFCET offers undergraduate (B.Tech) programs in multiple engineering disciplines and a postgraduate (M.Tech) program in Computer Science & Engineering\nWould you like to know more about the Core Values of the Baba Farid College?"
+    },
+    {
+        "query": "give me information about the courses",
+        "response": "We offer B.Tech, M.Tech, MBA, BCA, BBA, and diploma programs. Check our website BFCET.COM for details.\nWould you like to know more about the specializations available in our B.Tech program?"
+    },
+    {
+        "query": "tell me",
+        "response": "Warm greetings from Baba Farid College! Let me know if you need any information.\nWould you like to know about the Overview of the College?"
+    },
+    {
+        "query": "hello",
+        "response": null
     }
 ]

@@ -1,7 +1,7 @@
 from gtts import gTTS
 import io
 import pygame
-from response_generator import generate_response
+from response_generator import chatbot_flow
 import os
 import json
 import sys
@@ -85,7 +85,7 @@ if __name__ == "__main__":
             else:
                 text_to_speech("I don't have anything to repeat.")
         elif user_query:  # Proceed only if speech was successfully converted to text
-            response = generate_response(user_query)
+            response = chatbot_flow()
             last_response=response
             text_to_speech(response)
             log_conversation(user_query, response)
