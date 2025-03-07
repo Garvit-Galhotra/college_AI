@@ -5,8 +5,7 @@ import json
 import speech_recognition as sr
 from gtts import gTTS
 import io
-from pydub import AudioSegment
-from pydub.playback import play
+import pygame
 
 # Setting up the directory to the main folder "College_AI"
 src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))
@@ -26,23 +25,18 @@ response_data = load_responses(file_path)
 
 # ✅ Generate response based on query or follow-up (No follow-up storage here)
 def generate_response(user_id, user_query):
-    """
-    Generates a response based on user query.
-    Does not store follow-up questions, only intent & entities.
-    """
-    try:
-        intent = intent_prediction(user_query)  # Predict intent
-        print("Intent:", intent)  # debugging
-    except Exception as e:
-        print(f"Error in intent prediction: {e}")
-        intent = "DEFAULT"  # Default to a generic response
+
+    #******************* This Block Is performing NLP Tasks *******************#
+    intent = intent_prediction(user_query)  # Predict intent
 
     try:
         entities = entity_extraction(user_query)  # Extract entities
     except Exception as e:
         print(f"Error in entity extraction: {e}")
         entities = []  # Default to empty entity list
+    #***************************************************************************#
 
+    #******************* This Block Is Fetching Response *******************#
     responses = []
 
     if intent in response_data:
@@ -61,15 +55,15 @@ def generate_response(user_id, user_query):
 
         responses.append(response)
 
-        # ✅ Store intent & entities ONLY (No follow-up question storage)
-        if "followup" in intent_responses:
-            handle_context(user_id, "store", intent, entities)  # Store intent & entities only
+        # Store intent and entities in database disregarding the existance followup question
+        handle_context(user_id, "store", intent, entities, user_query)  # Store intent, entites and User_query
 
     else:
         responses.append(random.choice(response_data["DEFAULT"]["default"]))
 
     return "\n".join(responses)
-
+    #***************************************************************************#
+    
 # ✅ Find follow-up question in JSON (Does NOT store anything)
 def followUp_question(intent):
     """
@@ -80,14 +74,14 @@ def followUp_question(intent):
     return random.choice(followup_question) if followup_question else None
 
 # ✅ Store & retrieve only intent & entities (No follow-up question storage)
-def handle_context(user_id, action, intent=None, entities=None):
+def handle_context(user_id, action, intent=None, entities=None,last_response=None):
     """
     Manages user-specific context for conversation continuity.
     Stores only user_id, intent, and entities.
     """
     try:
         if action == "store":
-            store_context_db(user_id, intent, entities)  # Store intent & entities only
+            store_context_db(user_id, intent, entities, last_response)  # Store intent & entities only
         elif action == "retrieve":
             return get_context_db(user_id)  # Retrieve intent & entities only
         elif action == "clear":
@@ -105,19 +99,22 @@ def text_to_speech(response_text):
     # Store the speech output in memory instead of a file
     audio_stream = io.BytesIO()
     tts.write_to_fp(audio_stream)
+    print("Speaking...")
+    # Initialize pygame mixer
+    pygame.mixer.init()
     
     # Load audio from memory
     audio_stream.seek(0)
-    audio = AudioSegment.from_file(audio_stream, format="mp3")
+    audio_data = audio_stream.read()
+    audio_stream.seek(0)
     
-    # Adjust the pitch
-    octaves = 0.5  # Increase pitch by half an octave
-    new_sample_rate = int(audio.frame_rate * (2.0 ** octaves))
-    high_pitch_audio = audio._spawn(audio.raw_data, overrides={'frame_rate': new_sample_rate})
-    high_pitch_audio = high_pitch_audio.set_frame_rate(44100)
+    # Play the audio using pygame
+    pygame.mixer.music.load(io.BytesIO(audio_data), "mp3")
+    pygame.mixer.music.play()
     
-    # Play the modified audio directly from memory
-    play(high_pitch_audio)
+    # Wait until playback is done
+    while pygame.mixer.music.get_busy():
+        continue
 
 def speech_to_text():
     recognizer = sr.Recognizer()
@@ -134,12 +131,63 @@ def speech_to_text():
         print("Could not request results, check your internet connection.")
         return None
 
+# ✅ Function to handle follow-up questions
+def handle_followup(user_id, context):
+    stored_intent = context.get("intent")
+    if stored_intent:
+        followup_questions = followUp_question(stored_intent)  # Get follow-up question from JSON
+        if followup_questions:
+            # Asistant will ask the folloup Question
+            print(f"{followup_questions}")
+            text_to_speech(followup_questions)
+
+            user_query = speech_to_text()  # Take user's input for the follow-up
+            print(f"User ({user_id}): {user_query}")
+            
+            if user_query is None:
+               text_to_speech("Please try again.")
+               return None, True
+            
+            # ✅ If user says "yes", continue follow-up process
+            if user_query.lower() in ["yes", "yeah", "yep", "sure", "okay", "yes please"]:
+                print("Entering yes statement in handle_followup function... line 157")
+                user_query = followup_questions
+                print(f"User ({user_id}): {user_query}")
+                response = generate_response(user_id, user_query)   # new context is stored here again.
+                print("generating response using followup question in handle_followup function... line 160")
+                print(f"Assistant ({user_id}): {response}")
+                text_to_speech(response)
+                return response, True
+                # next_followup = followUp_question(stored_intent)  # Get next follow-up
+                '''
+                if next_followup:
+                    handle_context(user_id, "store", stored_intent, context.get("entities"), next_followup)
+                    print(f"Assistant ({user_id}): {next_followup}")
+                    text_to_speech(next_followup)
+                    return next_followup, True  # Continue follow-up process
+                else:
+                    handle_context(user_id, "clear")  # Clear context when no more follow-ups
+                    return None, False
+                    '''
+
+            # ✅ If user says "no", clear context & move on
+            elif user_query.lower() in ["no", "nope", "nah", "not really"]:
+                handle_context(user_id, "clear")
+                text_to_speech("Alright, let me know if you have any other questions.")
+                return "Alright, let me know if you have any other questions.", False
+
+            else:
+                response = generate_response(user_id, user_query)   # the context is stored here again.
+                print(f"Assistant ({user_id}): {response}")
+                text_to_speech(response)
+                return response, True  # End follow-up
+    return None, False
+
+# def followup_question(intent):
+#     followup_question = followup_questions.get(intent)
+
 # ✅ Main chatbot function with improved conversation flow
 def chatbot_flow():
-    """
-    Manages the conversation flow properly.
-    Uses follow-up questions as the next input when user says "yes".
-    """
     while True:
         user_id = input("Enter your user ID (or type 'exit' to quit): ")
 
@@ -150,49 +198,31 @@ def chatbot_flow():
         while True:
             print(f"You ({user_id}): Say something... (Say 'quit', 'bye', or 'exit' to quit)")
             user_query = speech_to_text()
-
-            if user_query.lower() in ["quit", "bye", "exit"]:
+            if user_query is None:
+                text_to_speech("Please try again.")
+                continue
+            elif user_query.lower() in ["quit", "bye", "exit"]:
                 print(f"Assistant ({user_id}): Goodbye!")
-                text_to_speech("Goodbye!")
+                text_to_speech("Goodbye!, Have a nice day.")
                 handle_context(user_id, "clear")
-                break  
-            
-            # ✅ Step 2: Process the user query normally
-            response = generate_response(user_id, user_query)
-            print(f"Assistant ({user_id}): {response}")
-            text_to_speech(response)
+                break
+            else:
+                # ✅ Step 2: Process the user query normally
+                response = generate_response(user_id, user_query)
+                print(f"Assistant ({user_id}): {response}")
+                text_to_speech(response)
             
             # ✅ Step 1: Check if a follow-up exists
             context = handle_context(user_id, "retrieve")
             if context:
-                stored_intent = context.get("intent")
-                print("Context:", context) # debugging
-                if stored_intent:
-                    followup_question = followUp_question(stored_intent)
-                    if followup_question:
-                        print(f"Assistant ({user_id}): {followup_question}")
-                        text_to_speech(followup_question)
-                        user_query = speech_to_text()  # Take user's input for the follow-up
-
-                        # ✅ If user says "yes", use the follow-up question as the input
-                        if user_query.lower() in ["yes", "yeah", "yep", "sure", "okay"]:
-                            user_query = followup_question  # Treat follow-up as input
-                            response = generate_response(user_id, user_query)
-                            handle_context(user_id, "clear")  # Clear intent & entities
-                            print(f"Assistant ({user_id}): {response}")
-                            text_to_speech(response)
-                            continue
-
-                        # ✅ If user says "no", clear context & move on
-                        elif user_query.lower() in ["no", "nope", "nah", "not really"]:
-                            handle_context(user_id, "clear")
-                            print(f"Assistant ({user_id}): Alright, let me know if you have any other questions.")
-                            text_to_speech("Alright, let me know if you have any other questions.")
-                            continue
-                        else:
-                            response = generate_response(user_id, user_query)
-                            print(f"Assistant ({user_id}): {response}")
-                            text_to_speech(response)
+                print("Entering handling followup function... line 221")
+                _ , ask_followup = handle_followup(user_id, context)
+                if ask_followup:
+                    print("Asking follow-up question... line 224")
+                    context = handle_context(user_id, "retrieve")
+                    handle_followup(user_id, context)
+                    continue
+                
 
 # ✅ Run the chatbot
 if __name__ == "__main__":

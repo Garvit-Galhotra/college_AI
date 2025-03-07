@@ -3,7 +3,7 @@
 from sentence_transformers import InputExample
 
 train_examples = [
-    # 1. College Overview
+    # 1. College Overview -  33 questions
     InputExample(texts=["What is the Vision of the College?", "Tell me about the College."], label=1.0),
     InputExample(texts=["Describe the college in brief.", "Tell me about the College."], label=1.0),
     InputExample(texts=["When was the college established?", "Tell me about the College."], label=1.0),
@@ -39,8 +39,8 @@ train_examples = [
     InputExample(texts=["Can you give me discriptions about the colegue?", "Tell me about the College."], label=1.0),
     InputExample(texts=["Can you tell about the colleg and its deatils?", "Tell me about the College."], label=1.0),
     
-    # labeling 0.0
-    InputExample(texts=["What is the Vision of the College?", "What programs I can join after 12th?"], label=0.0),
+    # labeling 0.0 - 42 questions - 
+    InputExample(texts=["What is the College's vision?", "What programs I can join after 12th?"], label=0.0),
     InputExample(texts=["Describe the college in brief.", "Do you offer undergraduate courses?"], label=0.0),
     InputExample(texts=["When was the college established?", "Are there any diploma programs?"], label=0.0),
     InputExample(texts=["What is the motto of the college?", "What undergraduate programs does BFGI offer after 12th?"], label=0.0),
@@ -53,32 +53,32 @@ train_examples = [
     InputExample(texts=["Can yu give me some details on tht colleg?","Is there an online application process?"], label=0.0),
     InputExample(texts=["Can you give me discriptions about the colegue?", "Is there an entrance exam required?"], label=0.0),
     InputExample(texts=["Can you tell about the colleg and its deatils?", "Are interviews part of the admission process?"], label=0.0),
-    InputExample(texts=["What is the Vision of the College?", "Does this college have a library on campus?"], label=0.3),
+    InputExample(texts=["How does the College envision its future?", "Does this college have a library on campus?"], label=0.3),
     InputExample(texts=["Describe the college in brief.", "Do you provide hostel facilities?"], label=0.1),
     InputExample(texts=["When was the college established?","Is there a cafeteria on campus?"], label=0.2),
     InputExample(texts=["What is the motto of the college?", "Does the college have Wi-Fi facilities?"], label=0.0),
     InputExample(texts=["Can you tell me about the college’s history and when it was established?","What types of study spaces are available for students on campus?"], label=0.1),
-    InputExample(texts=["What is the Vision of the College?", "Who is the principal of the college?"], label=0.2),
+    InputExample(texts=["What is the long-term goal of the College?", "Who is the principal of the college?"], label=0.2),
     InputExample(texts=["Describe the college in brief.", "How often do faculty members hold office hours?"], label=0.1),
     InputExample(texts=["When was the college established?","Who currentley leads the Depatment of SSD?"], label=0.1),
     InputExample(texts=["What is the motto of the college?","Who is the principal of the college?"], label=0.3),
     InputExample(texts=["Can you tell me about the college’s history and when it was established?", "Can you tell me who the principal is?"], label=0.2),
-    InputExample(texts=["What is the Vision of the College?","is there any department related to this?"], label=0.0),
+    InputExample(texts=["What future aspirations does the College have?","is there any department related to this?"], label=0.0),
     InputExample(texts=["Describe the college in brief.","Is there a Computer Science department?"], label=0.1),
     InputExample(texts=["When was the college established?","Do you have a Department of Humanities?"], label=0.2),
     InputExample(texts=["What is the motto of the college?", "How many departments have research centers or institutes?"], label=0.0),
     InputExample(texts=["Can you tell me about the college’s history and when it was established?", "What are the departmental ranking and recognition?"], label=0.1),
-    InputExample(texts=["What is the Vision of the College?","How much does a program cost"], label=0.0),
+    InputExample(texts=["What does the College aim to achieve in the future?","How much does a program cost"], label=0.0),
     InputExample(texts=["Describe the college in brief.", "What is the fee Structure?"], label=0.1),
     InputExample(texts=["When was the college established?","How dos the prgram cost, and how the fees are set up?"], label=0.2),
     InputExample(texts=["What is the motto of the college?","Can you tell me wut the program costs and how the feez is settup?"], label=0.3),
     InputExample(texts=["Can you tell me about the college’s history and when it was established?","How much dos the program cost, and can you explain how the fees are sett up?"], label=0.1),
-    InputExample(texts=["What is the Vision of the College?","What is the average placement percentage?"], label=0.0),
+    InputExample(texts=["What is the overarching vision of the College?","What is the average placement percentage?"], label=0.0),
     InputExample(texts=["Describe the college in brief.","What is the highest package offered?"], label=0.1),
     InputExample(texts=["When was the college established?","What companies visit for recruitment?"], label=0.2),
     InputExample(texts=["What is the motto of the college?","Are internships provided?"], label=0.1),
     InputExample(texts=["Can you tell me about the college’s history and when it was established?","What are the placement opportunities?"], label=0.0),
-    InputExample(texts=["What is the Vision of the College?","What kind of extracurricular activities are available?"], label=0.0),
+    InputExample(texts=["What is the College's ultimate vision?","What kind of extracurricular activities are available?"], label=0.0),
     InputExample(texts=["Describe the college in brief.","Do you organize annual events?"], label=0.1),
     InputExample(texts=["When was the college established?","Is there a cultural festival?"], label=0.2),
     InputExample(texts=["What is the motto of the college?","Do you have student clubs or societies?"], label=0.0),
@@ -416,7 +416,7 @@ train_examples = [
     InputExample(texts=["Can you explain to me the way fees are settup for the program?", "What is the fee Structure?"], label=1.0),
     InputExample(texts=["Can you tel me how are the fees set for the prgram?", "What is the fee Structure?"], label=1.0),
     InputExample(texts=["I’d like to understand how fees are arranged in the porgram.", "What is the fee Structure?"], label=1.0),
-    InputExample(texts=["Can you explain me how the fee structure is put together in teh prgram?", "What is the fee Structure?"], label=1.0),
+    InputExample(texts=["Can you explain me how the fee structure is put together in the program?", "What is the fee Structure?"], label=1.0),
 
     #Labeling 0.0
     InputExample(texts=["How much does a program cost","What is the average placement percentage?"], label=0.0),
