@@ -398,34 +398,62 @@
     "CAMPUS_QUERY": {
         "library": [
             "Our library is well-equipped with thousands of books, journals, and digital resources.",
-            "BFCET's library provides a quiet and resourceful environment for students."
+            "BFCET's library provides a quiet and resourceful environment for students.",
+            "Students can access e-books, research papers, and online databases for academic purposes.",
+            "The library offers reading rooms, discussion areas, and research assistance for students.",
+            "Regular book fairs, author talks, and literary events are organized in the library.",
+            "The library is a hub of knowledge and learning, supporting students in their academic pursuits."
         ],
         "gym": [
             "We have a modern gym with professional trainers for student fitness.",
-            "The campus gym is open for students from 6 AM to 9 PM."
+            "The campus gym is open for students from 6 AM to 9 PM.",
+            "Students can access a range of equipment for cardio, strength training, and flexibility exercises.",
+            "Fitness classes, yoga sessions, and wellness programs are conducted in the gym.",
+            "The gym promotes a healthy lifestyle and physical well-being among students.",
+            "The campus gym is equipped with state-of-the-art facilities to cater to students' fitness needs."
+
         ],
         "cafeteria": [
             "Our cafeteria offers a variety of meals and snacks at affordable prices.",
-            "The BFCET cafeteria serves hygienic and tasty food for students and staff."
+            "The BFCET cafeteria serves hygienic and tasty food for students and staff.",
+            "Students can enjoy a range of cuisines, beverages, and snacks in the cafeteria.",
+            "The cafeteria provides a comfortable and relaxing space for students to socialize and dine.",
+            "Special food options are available for students with dietary restrictions or preferences.",
+            "The cafeteria is a popular spot on campus for students to unwind and enjoy delicious meals."
         ],
         "hostel": [
             "The campus provides separate hostel facilities for boys and girls with modern amenities.",
             "Hostel rooms are spacious, well-furnished, and include Wi-Fi access, laundry, and mess facilities.",
-            "24/7 security and dedicated wardens ensure a safe and comfortable stay for students."
+            "24/7 security and dedicated wardens ensure a safe and comfortable stay for students.",
+            "Common areas, TV rooms, and recreational facilities are available in the hostels.",
+            "Regular cleaning, maintenance, and hygiene standards are maintained in the hostels.",
+            "The hostel environment promotes a sense of community, friendship, and cultural exchange among students."
         ],
         "sports": [
             "BFCET offers excellent sports facilities including basketball, football, badminton, and indoor games.",
             "Regular inter-college and intra-college tournaments help students develop teamwork and sportsmanship.",
-            "Professional coaches are available to guide students in various sports activities."
+            "Professional coaches are available to guide students in various sports activities.",
+            "The campus has a sports complex with a gym, swimming pool, and outdoor sports courts.",
+            "Students can participate in sports clubs, fitness programs, and adventure sports activities.",
+            "Sports events, annual meets, and fitness challenges are organized to promote a healthy lifestyle."
         ],
         "transport": [
             "The institute provides a well-organized transport facility with a fleet of buses covering nearby cities and towns.",
-            "All buses are equipped with safety measures, ensuring secure and comfortable travel for students."
+            "All buses are equipped with safety measures, ensuring secure and comfortable travel for students.",
+            "Transport services are available for daily commutes and special occasions like industrial visits and excursions.",
+            "Students can access bus routes, schedules, and emergency contact details for transport services.",
+            "The transport system is designed to cater to the commuting needs of students and staff.",
+            "The college ensures timely and efficient transport services for the convenience of students and faculty."
         ],
         "medical": [
             "BFCET has an on-campus medical facility with qualified doctors and first-aid support.",
-            "Emergency medical services are available 24/7 for students and staff."
+            "Emergency medical services are available 24/7 for students and staff.",
+            "Regular health check-ups, awareness programs, and counseling services are provided.",
+            "The medical center is equipped with essential medicines, diagnostic tools, and treatment facilities.",
+            "Students can seek medical assistance for minor ailments, injuries, and health concerns.",
+            "The college prioritizes the health and well-being of students by providing accessible medical care."
         ],
+    
         "default": [
             "Our campus has excellent facilities including a library, gym, cafeteria, hostels, transport services, and medical care.",
             "BFCET provides a secure and comfortable environment for students to thrive academically and socially.",
@@ -437,15 +465,27 @@
     "PLACEMENT_QUERY": {
         "internship": [
             "The college has tie-ups with top industries to provide students with hands-on internship experiences.",
-            "Internships are available in various fields such as AI, software development, mechanical engineering, and business management."
+            "Internships are available in various fields such as AI, software development, mechanical engineering, and business management.",
+            "Students gain practical exposure, industry insights, and networking opportunities through internships.",
+            "Internship programs help students apply theoretical knowledge to real-world projects and challenges.",
+            "The college assists students in securing internships with leading companies to enhance their employability skills.",
+            "Internships are an integral part of the curriculum, providing students with valuable work experience and industry exposure."
         ],
         "recruiters": [
             "Top recruiters include TCS, Infosys, Wipro, HCL, and Accenture, among many others.",
-            "The placement cell ensures students get opportunities in leading national and international companies."
+            "The placement cell ensures students get opportunities in leading national and international companies.",
+            "Recruiters from various sectors like IT, manufacturing, finance, and consulting visit the campus for placements.",
+            "Students are trained and prepared for interviews, group discussions, and recruitment processes by the placement cell.",
+            "The college has a strong network of recruiters offering diverse job roles and career opportunities to students.",
+            "Our placement cell maintains strong relationships with industry partners to facilitate campus placements."
         ],
         "training": [
             "The college offers dedicated pre-placement training programs including aptitude tests, mock interviews, and coding practice.",
-            "Students undergo resume-building sessions and industry interaction programs to enhance employability skills."
+            "Students undergo resume-building sessions and industry interaction programs to enhance employability skills.",
+            "Training workshops on communication skills, group dynamics, and problem-solving are conducted regularly.",
+            "The placement cell organizes skill development sessions, personality enhancement programs, and career guidance workshops.",
+            "Students are prepared for competitive job markets through rigorous training, industry insights, and mock interview sessions.",
+            "The college focuses on holistic development by providing students with technical, soft skills, and industry-specific training."
         ],
         "default": [
             "Our placement cell provides career guidance, internships, and job opportunities with top recruiters. Visit our website for more details.",
@@ -458,28 +498,282 @@
     "EVENTS_QUERY": {
         "techfest": [
             "BFCET organizes an annual tech fest featuring hackathons, coding competitions, and robotics events.",
-            "Students get to showcase their technical skills and innovative ideas in a competitive environment."
+            "Students get to showcase their technical skills and innovative ideas in a competitive environment.",
+            "Students have the opportunity to demonstrate their technical expertise and creative solutions in a challenging and competitive setting.",
+            "Students can highlight their technical abilities and innovative concepts in a dynamic and competitive atmosphere.",
+            "The tech fest is a platform for students to exhibit their technical prowess and creative problem-solving skills.",
+            "Students are given the platform to display their technical proficiency and original ideas in an engaging and competitive environment.",
+            "The college hosts a tech fest to encourage students to explore new technologies and showcase their technical talents.",
+            "The tech fest provides students with an opportunity to demonstrate their technical skills and innovative projects in a competitive setting."
+        
+
         ],
         "cultural": [
             "Cultural events at BFCET include dance, music, drama, and talent showcases.",
-            "Annual cultural fests bring students together to celebrate diversity and creativity."
+            "Annual cultural fests bring students together to celebrate diversity and creativity.",
+            "Students participate in various cultural activities, including dance, music, drama, and art exhibitions.",
+            "Cultural events provide a platform for students to showcase their talents and creativity.",
+            "The college hosts cultural events to promote artistic expression and creativity among students.",
+            "Students engage in a variety of cultural activities to celebrate diversity and talent.",
+            "Cultural fests are organized to encourage students to explore their artistic talents and cultural heritage.",
+            "The college conducts cultural events to foster creativity, talent, and cultural exchange among students."
+
         ],
         "sportsmeet": [
             "The college hosts an annual sports meet where students participate in athletics, team games, and adventure sports.",
-            "Winners of various events receive awards and recognition from the institute."
+            "Winners of various events receive awards and recognition from the institute.",
+            "The sports meet encourages students to engage in physical activities and develop sportsmanship.",
+            "Students compete in a variety of sports events to showcase their athletic abilities and teamwork.",
+            "The sports meet promotes a healthy and active lifestyle among students.",
+            "Students participate in a range of sports activities to enhance physical fitness and sportsmanship.",
+            "The sports meet is a platform for students to exhibit their athletic skills and competitive spirit.",
+            "The college organizes sports events to encourage students to participate in physical activities and develop teamwork.",
+            "The sports meet fosters a spirit of sportsmanship and camaraderie among students."
         ],
         "seminars": [
-            "Regular seminars and guest lectures are conducted by industry experts to keep students updated with the latest trends.",
-            "Topics include AI, machine learning, blockchain, entrepreneurship, and more."
+            "Regular seminars and guest lectures are conducted by industry experts to keep students updated with the latest trends."
+        ],
+        "workshops": [
+            "Workshops on AI, IoT, programming languages, and soft skills are conducted to enhance students' knowledge and abilities."
+        ],
+        "guestlectures": [
+            "Guest lectures by industry professionals, researchers, and academicians provide students with valuable insights and perspectives."
+        ],
+        "competitions": [
+            "Competitions like coding contests, hackathons, and robotics challenges are organized to foster creativity and innovation among students."
+        ],
+        "festivals": [
+            "The college celebrates festivals like Diwali, Holi, Eid, Christmas, and Lohri to promote cultural diversity and harmony."
         ],
         "default": [
-            "BFCET hosts a variety of technical, cultural, and sports events throughout the year. Stay tuned for upcoming events!",
-            "Students actively participate in numerous events to develop creativity, teamwork, and leadership skills.",
-            "The institute encourages students to engage in extracurricular activities alongside academics.",
-            "Workshops, guest lectures, and competitions provide students with exposure to industry trends and innovations.",
-            "For event schedules and participation details, visit our college website."
+            "BFCET hosts a variety of technical, cultural, and sports events throughout the year. Stay tuned for upcoming events!"
+        ]   
+        
+    },
+    "DOCUMENT_QUERY": {
+        "btech": [
+            "Documents required for B.Tech admissions include 10th and 12th grade mark sheets and certificates, Aadhar card, passport size photos, and category certificate (if applicable) are mandatory for verification."
+        ],
+        "btechaiml": [
+            "For B.Tech AI & ML admissions, candidates need to submit 10th and 12th grade mark sheets and passing certificates, Aadhar card, passport size photos, and category certificate (if applicable) should be provided for verification."
+        ],
+        "btechcse": [
+            "Documents needed for B.Tech CSE admissions include 10th and 12th grade mark sheets and certificates, Aadhar card, passport size photos, and category certificate (if applicable) are essential for verification."
+        ],
+        "btechiot": [
+            "For B.Tech IoT admissions, candidates must provide 10th and 12th grade mark sheets and certificates, Aadhar card, passport size photos, and category certificate (if applicable) are required for verification."
+        ],
+        "civilengineering": [
+            "Documents required for B.Tech Civil Engineering admissions include 10th and 12th grade mark sheets and passing certificates, Aadhar card, passport size photos, and category certificate (if applicable) should be submitted for verification."
+        ],
+        "electricalengineering": [
+            "For B.Tech Electrical Engineering admissions, candidates need to submit 10th and 12th grade mark sheets and certificates, Aadhar card, passport size photos, and category certificate (if applicable) should be provided for verification."
+        ],
+        "mechanicalengineering": [
+            "Documents needed for B.Tech Mechanical Engineering admissions include 10th and 12th grade mark sheets and certificates, Aadhar card, passport size photos, and category certificate (if applicable) are mandatory for verification."
+        ],
+        "mtech": [
+            "For M.Tech admissions, candidates must provide bachelor's degree mark sheets and certificates,  Aadhar card, passport size photos, and category certificate (if applicable) should be submitted for verification."
+        ],
+        "mba": [
+            "Documents required for MBA admissions include bachelor's degree mark sheets and certificates, Aadhar card, passport size photos, and category certificate (if applicable) are essential for verification."
+        ],
+        "bsc": [
+            "For B.Sc admissions, candidates need to submit 10th and 12th grade mark sheets and certificates, Aadhar card, passport size photos, and category certificate (if applicable) should be provided for verification."
+        ],
+        "bca": [
+            "Documents needed for BCA admissions include 10th and 12th grade mark sheets and certificates, Aadhar card, passport size photos, and category certificate (if applicable) are mandatory for verification."
+        ],
+        "bcaaiml": [
+            "For BCA AI & ML admissions, candidates must provide 10th and 12th grade mark sheets and certificates, Aadhar card, passport size photos, and category certificate (if applicable) should be submitted for verification."
+        ],
+        "bba": [
+            "For BBA admissions, candidates must provide 10th and 12th grade mark sheets and certificates, Aadhar card, passport size photos, and category certificate (if applicable) should be submitted for verification."  
+        ],
+        "diploma": [
+            "Documents required for diploma admissions include 10th or 12th grade mark sheets and passing certificates, Aadhar card, passport size photos, and category certificate (if applicable) should be submitted for verification."
+        ],
+        "default": [
+            "Candidates must submit 10th and 12th grade mark sheets, passing certificates, Aadhar card, and passport size photos for admissions, additional documents like category certificate (if applicable) may be required for verification."
+        ]
+
+    },
+    "SOCIALMEDIA_QUERY": {
+        "facebook": [
+            "Follow us on Facebook for the latest updates, events, and news from BFCET." 
+        ],
+        "twitter": [
+            "Follow us on Twitter for real-time updates, announcements, and campus highlights."    
+        ],
+        "instagram": [
+            "Follow us on Instagram for visual stories, campus life, and student experiences."
+        ],
+        "linkedin": [
+            "Connect with us on LinkedIn for professional updates, alumni networking, and industry collaborations."
+        ],
+        "youtube": [
+            "Subscribe to our YouTube channel for videos on campus life, events, and academic insights."
+        ],
+        "default": [
+            "Stay connected with us on social media for the latest news, events, and campus updates."
+        ]
+
+    },
+    "EXAM_QUERY": {
+        "btech": [
+            "B.Tech exams are conducted at the end of each semester as per the academic calendar ,Exams include theory papers, practical assessments, and project evaluations."
+        ],
+        "btechaiml": [
+            "B.Tech AI & ML exams consist of theory papers, practical assessments, and AI model development projects, Exams are conducted at the end of each semester."
+        ],
+        "btechcse": [
+            "B.Tech CSE exams include theory papers, programming assignments, and software development projects, Exams are held at the end of each semester."
+        ],
+        "btechiot": [
+            "B.Tech IoT exams consist of theory papers, practical assessments, and IoT project evaluations, Exams are conducted at the end of each semester."
+        ],
+        "civilengineering": [
+            "B.Tech Civil Engineering exams include theory papers, lab experiments, and project presentations, Exams are held at the end of each semester."
+        ],
+        "electricalengineering": [
+            "B.Tech Electrical Engineering exams consist of theory papers, practical assessments, and circuit design projects, Exams are conducted at the end of each semester."
+        ],
+        "mechanicalengineering": [
+            "B.Tech Mechanical Engineering exams include theory papers, CAD modeling assignments, and industrial projects, Exams are held at the end of each semester."
+        ],
+        "mtech": [
+            "M.Tech exams consist of theory papers, research projects, and dissertation evaluations, Exams are conducted at the end of each semester."
+        ],
+        "mba": [
+            "MBA exams include theory papers, case study analysis, and business simulations, Exams are held at the end of each semester."
+        ],
+        "bsc": [
+            "B.Sc exams consist of theory papers, lab experiments, and research projects, Exams are conducted at the end of each semester."
+        ],
+        "bca": [
+            "BCA exams include theory papers, programming assignments, and software development projects, Exams are held at the end of each semester."
+        ],
+        "bcaaiml": [
+            "BCA AI & ML exams consist of theory papers, AI model development projects, and data analytics assessments, Exams are conducted at the end of each semester."
+        ],
+        "bba": [
+            "BBA exams include theory papers, case study analysis, and business presentations, Exams are held at the end of each semester."
+        ],
+        "diploma": [
+            "Diploma exams consist of theory papers, practical assessments, and project work, Exams are conducted at the end of each semester."
+        ],
+        "default": [
+            "Exams for various programs include theory papers, practical assessments, and project evaluations, Exams are conducted at the end of each semester."
+        ]
+     
+    },
+    "RESEARCH_QUERY": {
+        "btech": [
+            "BFCET fosters innovation and research in B.Tech programs, offering access to top-tier resources and global collaborations, empowering students and faculty to lead in emerging technologies."
+        ],
+        "btechaiml": [
+            "B.Tech AI & ML students engage in cutting-edge research projects, exploring AI applications, machine learning algorithms, and data analytics, contributing to advancements in AI technology."
+        ],
+        "btechcse": [
+            "B.Tech CSE students participate in research initiatives on software development, cybersecurity, and cloud computing, collaborating with industry experts and academic researchers."
+        ],
+        "btechiot": [
+            "B.Tech IoT students work on research projects related to automation, smart devices, and IoT applications, contributing to the development of innovative IoT solutions."
+        ],
+        "civilengineering": [
+            "B.Tech Civil Engineering students engage in research on infrastructure development, sustainable construction, and environmental engineering, contributing to advancements in civil engineering practices."
+        ],
+        "electricalengineering": [
+            "B.Tech Electrical Engineering students participate in research on power systems, electronics, and renewable energy, contributing to innovations in electrical engineering technologies."
+        ],
+        "mechanicalengineering": [
+            "B.Tech Mechanical Engineering students work on research projects related to robotics, CAD modeling, and industrial automation, contributing to advancements in mechanical engineering."
+        ],
+        "mtech": [
+            "BFCET promotes advanced research in M.Tech programs, with state-of-the-art facilities, industry partnerships, and financial support to drive cutting-edge technological solutions."
+        ],
+        "mba": [
+            "MBA students engage in research on business strategies, market trends, and organizational behavior, contributing to innovative management practices and industry insights."
+        ],
+        "bsc": [
+            "B.Sc students participate in research projects on scientific discoveries, data analysis, and experimental studies, contributing to advancements in various scientific fields."
+        ],
+        "bca": [
+            "BFCET nurtures research and innovation in BCA, providing world-class resources, industry collaborations, and grants to support students and faculty in advancing the digital landscape."
+        ],
+        "bcaaiml": [
+            "BCA AI & ML students engage in research on artificial intelligence, machine learning algorithms, and data science applications, contributing to advancements in AI technology."
+        ],
+        "mca": [
+            "BFCET encourages groundbreaking research in MCA programs, offering access to premium journals, industry partnerships, and financial grants to fuel innovation in the tech industry."
+        ],
+        "bba": [
+            "BBA students participate in research on business trends, market analysis, and strategic management, contributing to innovative business practices and industry insights."
+        ],
+        "diploma": [
+            "Diploma students engage in research projects on technical innovations, industry applications, and practical solutions, contributing to advancements in various technical fields."
+        ],
+        "default": [
+            "BFCET fosters a dynamic research culture, providing state-of-the-art facilities and global collaborations to address engineering challenges. We support faculty and students with world-class resources and grants to advance cutting-edge research."
         ]
     },
+    "PLACEMENTS_QUERY": {
+        "btech": [
+            "The T&P Cell at BFCET equips B.Tech students with industry-relevant skills, soft skills training, and placement opportunities, ensuring they are job-ready for the tech industry."
+        ],
+        "btechaiml": [
+            "B.Tech AI & ML students receive specialized training, industry exposure, and placement assistance through the T&P Cell, preparing them for AI and data science roles in top companies."
+        ],
+        "btechcse": [
+            "B.Tech CSE students benefit from the T&P Cell's training programs, industry collaborations, and placement drives, securing job opportunities in software development, cybersecurity, and IT services."
+        ],
+        "btechiot": [
+            "B.Tech IoT students receive placement support, industry internships, and skill development programs through the T&P Cell, preparing them for IoT and automation roles in leading companies."
+        ],
+        "civilengineering": [
+            "B.Tech Civil Engineering students receive placement guidance, industry internships, and skill development programs through the T&P Cell, securing job opportunities in construction, infrastructure, and project management."
+        ],
+        "electricalengineering": [
+            "B.Tech Electrical Engineering students benefit from the T&P Cell's training programs, industry collaborations, and placement drives, securing job opportunities in power systems, electronics, and electrical design."
+        ],
+        "mechanicalengineering": [
+            "B.Tech Mechanical Engineering students receive placement assistance, industry internships, and skill development programs through the T&P Cell, preparing them for roles in manufacturing, design, and automation."
+        ],
+        "mtech": [
+            "For M.Tech students, the T&P Cell focuses on advanced technical skills, research exposure, and industry placements, preparing them for leadership roles in technology."
+        ],
+        "mba": [
+            "The T&P Cell supports MBA students with personality development, managerial skills, and industry exposure, guiding them towards successful careers in business leadership."
+        ],
+        "bsc": [
+            "B.Sc students receive placement support, industry internships, and skill development programs through the T&P Cell, securing job opportunities in research, data analysis, and scientific roles."
+        ],
+        "bca": [
+            "The T&P Cell at BFCET helps BCA students enhance their technical and soft skills, offering placement support and industrial exposure to prepare them for IT sector careers."
+        ],
+        "bcaaiml": [
+            "BCA AI & ML students receive specialized training, industry exposure, and placement assistance through the T&P Cell, preparing them for AI and data science roles in top companies."
+        ],
+        "mca": [
+            "MCA students benefit from the T&P Cell's training programs, industry collaborations, and placement drives, securing job opportunities in software development, IT consulting, and project management."
+        ],
+        "bba": [
+            "BBA students receive placement guidance, industry internships, and skill development programs through the T&P Cell, securing job opportunities in marketing, finance, and business management."
+        ],
+        "diploma": [
+            "Diploma students receive placement support, industry internships, and skill development programs through the T&P Cell, securing job opportunities in technical fields, manufacturing, and services."
+        ],
+        "default": [
+            "The T&P Cell at BFCET focuses on making students employable by offering soft skills training, industrial exposure, and placement opportunities. We aim to bridge the gap between education and industry, ensuring students are well-prepared for the competitive job market."
+        ]
+    },
+    "CONTACT_QUERY": {
+        "admission": [
+            "For any admission-related queries, feel free to contact us at Helpline: +91 8081-100-200, Admission Support 1: +91-9501115524, or Admission Support 2: +91-9501115528."
+        ]
+    },
+
+
     "FALLBACK": {
         "default": [
             "I'm sorry, I didn't understand that. Can you rephrase?",

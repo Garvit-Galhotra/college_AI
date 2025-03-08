@@ -13,22 +13,20 @@ def intent_prediction(query):
     # Example FAQs or intents
     # string representation of the Question
     faqs = ["Tell me about the College.",
-            "What courses are offered?",
-            "What is the admission process?",
+            "what are the courses offered?",
+            "what is the admission process?",
             "What are the facilities available here?",
             "Who is Head of Department Of SSD?",
             "How many Departments do you have?",
             "What is the fee Structure?",
             "What are the placement opportunities?",
-            "Who are some notable alumni?",
             "Do you organize annual events?",
             "Are there any research labs available?",
-            "Can I participate in student exchange programs?",
-            "Do you offer online certification programs?",
             "What is the schedule for semester exams at BFGI?",
             "Hi",
-            "What courses should I take next semester?",
-            "what is this?"
+            "What are the documents needed for the application process?",
+            "What is the contact information for the college?",
+        
             ]
 
     # Encode FAQs
@@ -54,7 +52,7 @@ def intent_prediction(query):
         distance = cosine(query_embedding, embedding)
         if distance < min_distance:
             min_distance = distance
-            if min_distance > 0.6:
+            if min_distance > 0.4:
                 closest_faq = "what is this?"
                 break
             closest_faq = faq
@@ -67,34 +65,35 @@ def intent_prediction(query):
     # FAQs and intents are in dictionary form
     # Each intent is connected to a query
     faq_to_intent = {
-        "Tell me about the College.": "COLLEGE_OVERVIEW",
-        "What courses are offered?": "COURSE_QUERY",
-        "What is the admission process?": "ADMISSION_QUERY",
-        "What are the facilities available here?": "CAMPUS_QUERY",
+        "Tell me about the College.": "COLLEGE_OVERVIEW_QUERY",
+        "what are the courses offered?": "COURSE_OFFERED_AND_ONLINE_LEARNING_AND_RESOURCES_QUERY",
+        "what is the admission process?": "ADMISSION_PROCESS_QUERY",
+        "What are the facilities available here?": "CAMPUS_FACILITIES_QUERY",
         "Who is Head of Department Of SSD?": "FACULTY_QUERY",
         "How many Departments do you have?": "DEPARTMENT_QUERY",
-        "What is the fee Structure?": "FEE_QUERY",
-        "What are the placement opportunities?":"PLACEMENT_QUERY",
-        "Who are some notable alumni?": "ALUMNI_NETWORK_QUERY",
-        "Do you organize annual events?":"EVENTS_QUERY",
+        "What is the fee Structure?": "FEE_STRUCTURE_QUERY",
+        "What are the placement opportunities?":"PLACEMENT_AND_INTERNSHIP_QUERY",
+        "Do you organize annual events?":"EVENT_AND_ACTIVITES_QUERY",
         "Are there any research labs available?": "RESEARCH_OPPORTUNITIES_QUERY",
-        "Can I participate in student exchange programs?":"INTERNATIONAL_COLLABORATION_QUERY",
-        "Do you offer online certification programs?":"ONLINE_LEARNING_AND_RESOURCES_QUERY",
-        "What is the schedule for semester exams at BFGI?":"EXAM_SCHEDULE_QUERY",
-        "Hi":"GREETING",
-        "What courses should I take next semester?":"ACADEMIC_QUERY",
+        "What is the schedule for semester exams at BFGI?":"EXAMS_QUERY",
+        "Hi" : "GREETING",
+        "What are the documents needed for the application process?":"DOCUMENTS_NEEDED_QUERY",
+        "What is the contact information for the college?":"CONTACT_INFO_QUERY",
         "what is this?":"FALLBACK"
+       
     }
 
     # Get the matched intent
     matched_intent = faq_to_intent[closest_faq]
     #print(f"Matched Intent: {matched_intent}")
+    print(f"College AI: {matched_intent}")  # debugging
     return matched_intent
 
 # asking user questions repeatedly to identify the intent
 if __name__ == "__main__": 
     while (user_query := input("You: ").lower()) not in ["quit", "back", "thats it", "bye"]:
         intent_prediction(user_query)
+        
 
 
 
