@@ -159,16 +159,6 @@ def handle_followup(user_id, context):
                 text_to_speech(response)
                 return response, True
                 # next_followup = followUp_question(stored_intent)  # Get next follow-up
-                '''
-                if next_followup:
-                    handle_context(user_id, "store", stored_intent, context.get("entities"), next_followup)
-                    print(f"Assistant ({user_id}): {next_followup}")
-                    text_to_speech(next_followup)
-                    return next_followup, True  # Continue follow-up process
-                else:
-                    handle_context(user_id, "clear")  # Clear context when no more follow-ups
-                    return None, False
-                    '''
 
             # ✅ If user says "no", clear context & move on
             elif user_query.lower() in ["no", "nope", "nah", "not really"]:

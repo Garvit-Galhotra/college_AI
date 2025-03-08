@@ -6,4 +6,8 @@ pytest
 datasets
 sentence-transformers
 spacy
-spacy download en_core_web_sm
+#spacy download en_core_web_sm
+pygame
+gtts
+speechRecognition
+pydub
